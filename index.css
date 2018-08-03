@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	height: 100%;
+}
+
+.bg:before {
+	content: "";
+  	position: fixed;
+  	top: -5%;
+  	left: -5%;
+  	right: 0;
+  	bottom: 0;
+  	z-index: -1;
+	
+	display: block;
+ 	width: 110%;
+  	height: 110%;
+
+	background-image: url("portfolio-5.jpeg");
+/*	background-attachment: fixed;*/
+	background-size: cover;
+	
+/*	background-repeat: no-repeat;*/
+/*	background-position: center;*/
+/*				color: #fff;*/
+
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+
+.bg {
+/*	height: 100%;*/
+	overflow: auto;
+	position: relative;
+
+}
+
+footer {
+	background-color: #555555;
+
+}
+
+div.container-fluid {
+	position: fixed;
+	z-index: 1;
+}
+
+div:nth-child(odd) {
+	background-color: #6B6B6B;
+}
+
+div:nth-child(even) {
+	background-color: #762F30;
+}
+
+i:hover {
+	color: #11C8ED;
+}
+
+a {
+	color: black;
+}
+
+p { 
+	margin-top: 5px;
+}
+			

@@ -18,6 +18,9 @@
 		<!-- Stylesheet for font Awesome -->
 		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 		
+		<!--Page style sheet-->
+		<link href="index.css" rel="stylesheet" type="text/css">
+		
 		<!-- Favicon  -->
 		<link rel="icon" type="image/png" href="#">
 
@@ -25,61 +28,13 @@
 		<style>
 		/* Internal Stylings to override Bootstrap */
 
-			html, body {
-				height: 100%;
-			}
-			
-			.background-image {
-				height: 100%;
-				overflow: hidden;
-				
-				background: url("portfolio-4.png");
-				background-attachment: fixed;
-				background-size: cover;
-				background-repeat: no-repeat;
-				color: #fff;
-				z-index: -1;
-
-				-webkit-filter: blur(10px);
-				-moz-filter: blur(10px);
-				-o-filter: blur(10px);
-				-ms-filter: blur(10px);
-				filter: blur(10px);
-			}
-
-
-			footer {
-				background-color: #555555;
-				
-			}
-			
-			div.container-fluid {
-				position: fixed;
-				z-index: 1;
-			}
-				
-			div:nth-child(odd) {
-				background-color: #6B6B6B;
-			}
-			
-			div:nth-child(even) {
-				background-color: #762F30;
-			}
-			
-			i:hover {
-				color: #11C8ED;
-			}
-			
-			p { 
-				margin-top: 5px;
-			}
-			
 			
 		</style>   
 	</head>
 
 
-	<body>
+	<body class="bg">
+	
 	
 	<div class="container-fluid">
 		<div class="row"> 
@@ -92,12 +47,12 @@
 			<div class="col-sm">
 				<button type="button" class="btn btn-outline-primary" style="color: #11C8ED; border-color: #11C8ED; border-radius: 15px; border-width: 2px">
 					<i class="fas fa-user fa-3x fa-fw"></i>
-					<p>About</p>
+					<p>hello</p>
 				</button>
 				
 			</div>
 			<div class="col-sm">
-				<i class="fas fa-database fa-3x fa-fw"></i>
+				<a href="technologies.html"><i class="fas fa-database fa-3x fa-fw"></i></a>
 				<p>Technologies</p>
 			</div>
 			<div class="col-sm">
@@ -114,7 +69,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="background-image"></div>
+	
+	
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -129,13 +85,15 @@
 				var homePic = homeArray[Math.floor(Math.random() * 5)];
 				console.log(homePic);
 				
-				$(".background-image").css({"background-image" : homePic});
+				$("body.bg").css({"background-image" : homePic});
 				
 			});
 		</script>
-	</body>
-	
+		
+			
 	<footer>
 		
 	</footer>
+	</body>
+
 </html>

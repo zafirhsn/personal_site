@@ -50,11 +50,11 @@ div.container-fluid {
 	z-index: 1;
 }
 
-div:nth-child(odd) {
+div.col-sm:nth-child(odd) {
 	background-color: #6B6B6B;
 }
 
-div:nth-child(even) {
+div.col-sm:nth-child(even) {
 	background-color: #762F30;
 }
 
@@ -63,10 +63,40 @@ i:hover {
 }
 
 a {
-	color: black;
+	color: white;
 }
 
-p { 
-	margin-top: 5px;
+.col-sm {
+	text-align: center;
+	justify-content: center;
+	border-color: rgba(255,0,4,1.00);
+	border-style: solid;
+	border-width: 1px;
 }
+
+p, h1, h3 { 
+	text-align: center;
+}
+
+h1 {
+	font-size: 75px;
+	color: white;
+}
+
+h3 {
+	color: white;
+}
+
+.but-text {
+	color: white;
+}
+
+home-button {
+	margin-top: 10%;
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: red;
+}
+
 			

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Base stylings for all pages*/
+
+/*Nav stylings*/
+
+.nav-text {
+	font-size: 20px;	
+	font-family: 'Raleway', sans-serif;
+/*	font-family: 'Playfair Display', serif;*/
+}
+
+.nav-link {
+	color: #000000;
+}
+
+.nav-link:hover, .active {
+	color: #11C8ED;
+}
+
+

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	height: 100%;
+}
+
+.col {
+	text-align: center;
+}
+
+.page-text {
+/*	font-family: 'Roboto', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+.page-heading {
+/*	font-family: 'EB Garamound', serif;*/
+	font-family: 'Playfair Display', serif;
+	font-size: 85px;
+}

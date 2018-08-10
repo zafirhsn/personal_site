@@ -5,7 +5,7 @@
 
 /*Nav stylings*/
 
-.nav-text {
+.nav-text, a {
 	font-size: 20px;	
 	font-family: 'Raleway', sans-serif;
 /*	font-family: 'Playfair Display', serif;*/
@@ -13,10 +13,35 @@
 
 .nav-link {
 	color: #000000;
+	margin-left: 5px;
 }
 
 .nav-link:hover, .active {
 	color: #11C8ED;
+	border-color: #11C8ED;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 12px;
+	margin-right: -2px; /*To keep the links from shifting after adding the border*/
 }
 
+.footer-link {
+	color: #888888;
+}
+
+.footer-link:hover {
+	text-decoration: none;
+	
+	
+}
+
+.logo-img {
+	height: 30px;
+	width: 30px;
+}
+
+
+footer {
+	background-color: #11C8ED;
+}
 

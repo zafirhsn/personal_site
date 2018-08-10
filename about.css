@@ -1,11 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 
+@media screen and (max-width: 450px) {
+	img {
+		max-height: 90%;
+	}
+}
+
+@media screen and (min-width: 450.01px) {
+	img {
+		max-height: 90%;
+	}
+}
+
+img {
+	border-radius: 10px;
+}
+
+
 html, body {
 	height: 100%;
 }
 
-.col {
+.col, .col-sm {
 	text-align: center;
 }
 
@@ -13,6 +30,7 @@ html, body {
 /*	font-family: 'Roboto', sans-serif;*/
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+	font-size: 20px;
 }
 
 .page-heading {
@@ -20,3 +38,10 @@ html, body {
 	font-family: 'Playfair Display', serif;
 	font-size: 85px;
 }
+
+.content-row {
+	position: relative;
+	padding-top: 10%;
+	
+}
+

@@ -17,11 +17,6 @@ img {
 	border-radius: 10px;
 }
 
-
-html, body {
-	height: 100%;
-}
-
 .col, .col-sm {
 	text-align: center;
 }

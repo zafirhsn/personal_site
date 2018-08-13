@@ -19,21 +19,59 @@ html, body {
 }
 
 
+
 /*Nav stylings*/
+@media screen and (max-width: 576px) {
+	.nav-link {
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+}
+
+.nav-stylings {
+	background-color: #01849C;
+/*	opacity: 0.5;*/
+}
+
+.navbar-toggler {
+	border: none;
+	color: #fff;
+}
+
+
 .nav-link {
+	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	color: #000000;
+	color: #fff;
 	margin-left: 5px;
-	font-size: 20px;		
+	font-size: 20px;
+/*	border-radius: 18px;*/
+	
+	-webkit-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out; 
+	-moz-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+	-o-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+	-ms-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+	transition: background-color 0.25s ease, border-radius 0.25s ease;
+	
+/*
+	-webkit-transition: border-radius 0.15s ease-out; 
+	-moz-transition: border-radius 0.15s ease-out;
+	-o-transition: border-radius 0.15s ease-out;
+	-ms-transition: border-radius 0.15s ease-out;
+	transition: border-radius 0.15s ease-out;
+*/
 }
 
 .nav-link:hover, .active {
-	color: #11C8ED;
+	color: #fff;
+/*
 	border-color:#11C8ED;
 	border-width: 1px;
 	border-style: solid;
-	border-radius: 12px;
-	margin-right: -2px; /*To keep the links from shifting after adding the border*/
+*/
+	border-radius: 18px;
+/*	margin-right: -2px; To keep the links from shifting after adding the border*/
+	background-color: #11C8ED;
 }
 
 
@@ -46,7 +84,6 @@ html, body {
 	}
 	
 }
-
 
 footer {
 	position: absolute;
@@ -78,6 +115,10 @@ footer {
 	color: white;
 	height: 30px;
 	width: 30px;
+}
+
+.logo-img:hover {
+	color: black;
 }
 
 

@@ -29,13 +29,15 @@ html, body {
 }
 
 .nav-stylings {
-	background-color: #01849C;
+	background-color: #444;
 /*	opacity: 0.5;*/
+	text-align: center;
 }
 
 .navbar-toggler {
 	border: none;
 	color: #fff;
+	margin-left:-15px; 
 }
 
 
@@ -45,7 +47,7 @@ html, body {
 	color: #fff;
 	margin-left: 5px;
 	font-size: 20px;
-/*	border-radius: 18px;*/
+	border-radius: 0px;
 	
 	-webkit-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out; 
 	-moz-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
@@ -69,7 +71,7 @@ html, body {
 	border-width: 1px;
 	border-style: solid;
 */
-	border-radius: 18px;
+	border-radius: 10px;
 /*	margin-right: -2px; To keep the links from shifting after adding the border*/
 	background-color: #11C8ED;
 }

@@ -14,12 +14,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- StyleSheet for font from Google Fonts  -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400" rel="stylesheet">
 
 	<!-- Stylesheet for font Awesome -->
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
+	<!-- Base style sheet -->
+	<link href="baseStyling.css" rel="stylesheet" type="text/css">
+
 	<!--Page style sheet-->
-	<link href="index.css" rel="stylesheet" type="text/css">
+	<!-- <link href="projects.css" rel="stylesheet" type="text/css"> -->
 
 	<!-- Favicon  -->
 	<link rel="icon" type="image/png" href="#">
@@ -33,6 +37,54 @@
 </head>
 
 <body>
+
+	<div class="body-container"> 
+
+	<nav class="navbar navber-sticky-top navbar-expand-sm nav-stylings">
+  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span><i class="fas fa-bars fa-2x fa-fw"></i></span>
+	  </button>
+	  
+<!--	  <a class="navbar-brand" href="#">Brand</a>-->
+	  
+
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  	<div class="navbar-nav">
+			<a class="nav-link" href="#">Home</a>
+			<a class="nav-link active" href="http://www.zafirhasan.com/about.html">About<span class="sr-only">(current)</span></a>
+			<a class="nav-link" href="http://zafirhasan.com/projects.html">Projects</a>
+			<a class="nav-link" href="#">Resume</a>
+			<a class="nav-link" href="#">Contact</a>
+		</div>	  
+	  </div>
+	  
+	</nav>
+
+	<div class="container">
+		<div class="row"> 
+			<div class="col">
+				<span>Projects</span>
+				<span>Statify</span>
+				<span>Statify is site that presents users their listening statistics on Spotify in a clean, user friendly presentation. Users can see their top tracks of the last year, last 6 months, and last 4 weeks. Users can also see their top artists for the same three time periods. The site was made in HTML, CSS, and JavaScript. The site was made to be mobile-friendly using Bootstrap. JQuery's ajax methods communicate with Spotify's web API according to the OAuth2 authentication model.  </span> 
+				<span>PriCoSha</span>
+				<span>PriCoSha is a social media site where users can comment, like, tag, post, and add/delete friends.
+			</div>
+
+		</div>
+	</div> 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -50,8 +102,52 @@
 	
 		
 	<footer>
+		<div class="container">
+			<div class="row justify-content-center py-2">
+				<div class = "col-auto"> 
+					<a href="index.html" class="footer-link">Home</a>
+				</div>
+				<div class="col-auto"> 
+					<a href="about.html" class="footer-link">About</a>
+				</div>
+				<div class="col-auto">
+					<a href="projects.html" class="footer-link">Projects</a>
+				</div>
+				<div class="col-auto">
+					<a href="#" class="footer-link">Resume</a>
+				</div>
+				<div class="col-auto">
+					<a href="contact.html" class="footer-link">Contact</a>
+				</div>
+			</div>
+			
+			<div class="row justify-content-center py-2">
+				<div class="col-auto">
+					<a href="#"><i class="fab fa-github fa-2x fa-fw logo-img"></i></a>
+					
+				</div>
+				<div class="col-auto">
+					<a href="#"><i class="fab fa-linkedin fa-2x fa-fw logo-img"></i></a>
+				</div>
+			</div>
+			
+			<div class="row justify-content-center py-2 bottom-row">
+				<div class="col-auto">
+					<span class="footer-text">&copy; Copyright 2018. All rights reserved.</span>
+				</div>
+				<div class="col-auto"> 
+					<a href="#" class="footer-link footer-text">Sitemap</a>
+				</div>
+				<div class="col-auto">
+					<span class="footer-text">Contact me: zh754@nyu.edu</span>
+				</div>			
+			</div>
+			
+		</div>
 		
 	</footer>
+</div>
+
 </body>
 
 </html>

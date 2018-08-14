@@ -50,15 +50,15 @@ div.container-fluid {
 	z-index: 1;
 }
 
-/*
-div.col-sm:nth-child(odd) {
+
+/*div.col-sm:nth-child(odd) {
 	background-color: #6B6B6B;
 }
 
 div.col-sm:nth-child(even) {
 	background-color: #762F30;
-}
-*/
+}*/
+
 
 a {
 	height: 100%;
@@ -140,7 +140,6 @@ home-button {
 	position: relative;
 	padding-top: 20%;
 }
-
 
 
 			

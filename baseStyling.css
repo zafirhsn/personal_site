@@ -1,127 +1,129 @@
-@charset "utf-8";
 /* CSS Document */
-
+/*Color variables*/
+/*Font stack*/
+/*Animation mixins*/
 /*Base stylings for all pages*/
-
-
 /*Document styling*/
 html, body {
-	height: 100%;
-/*	position: relative;*/
-/*	background-color: #69DBF0;*/
+  height: 100%;
+  /*	position: relative;*/
+  /*	background-color: #69DBF0;*/
 }
 
 .body-container {
-	min-height: 100%;
-	overflow: hidden;
-	position: relative;
-	padding-bottom: 200px;
+  margin-top: 25%;
 }
-
-
+@media screen and (min-width: 576px) {
+  .body-container {
+    margin-top: 15%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .body-container {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .body-container {
+    margin-top: 7%;
+  }
+}
 
 /*Nav stylings*/
-@media screen and (max-width: 576px) {
-	.nav-link {
-		margin-top: 3px;
-		margin-bottom: 3px;
-	}
-}
-
 .nav-stylings {
-	background-color: #444;
-/*	opacity: 0.5;*/
-	text-align: center;
+  background-color: #01849C;
+  opacity: 0.9;
+  text-align: center;
+  padding: 0;
 }
 
 .navbar-toggler {
-	border: none;
-	color: #fff;
-	margin-left:-15px; 
+  border: none;
+  color: #fff;
+  margin-left: -5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
+.navbar-toggler:hover {
+  color: #11C8ED;
+}
 
 .nav-link {
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
-	color: #fff;
-	margin-left: 5px;
-	font-size: 20px;
-	border-radius: 0px;
-	
-	-webkit-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out; 
-	-moz-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-	-o-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-	-ms-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-	transition: background-color 0.25s ease, border-radius 0.25s ease;
-	
-/*
-	-webkit-transition: border-radius 0.15s ease-out; 
-	-moz-transition: border-radius 0.15s ease-out;
-	-o-transition: border-radius 0.15s ease-out;
-	-ms-transition: border-radius 0.15s ease-out;
-	transition: border-radius 0.15s ease-out;
-*/
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 20px;
+  border-radius: 0px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+  -ms-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+  transition: background-color 0.25s ease, border-radius 0.25s ease;
+}
+.nav-link:hover {
+  color: #fff;
+  background-color: #11C8ED;
+  /*
+  border-color:#11C8ED;
+  border-width: 1px;
+  border-style: solid;
+  */
+  /*	margin-right: -2px; To keep the links from shifting after adding the border*/
 }
 
-.nav-link:hover, .active {
-	color: #fff;
-/*
-	border-color:#11C8ED;
-	border-width: 1px;
-	border-style: solid;
-*/
-	border-radius: 10px;
-/*	margin-right: -2px; To keep the links from shifting after adding the border*/
-	background-color: #11C8ED;
+.active {
+  color: #fff;
+  background-color: #11C8ED;
 }
-
-
 
 /*Footer styling*/
-
 @media screen and (min-width: 540px) {
-	.bottom-row {
-		margin-left: -70px;
-	}
-	
+  .bottom-row {
+    margin-left: -70px;
+  }
+}
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 5%;
+  padding-top: 10px;
+  background-color: #01849C;
 }
 
-footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	margin-top: 5%;
-	padding-top: 10px;
-	background-color: #01849C;
+.top-row {
+  text-align: center;
 }
 
 .footer-link {
-	font-family: 'Raleway', sans-serif;
-	color: #FFF;
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
 }
 
 .footer-link:hover {
-	text-decoration: none;
-	color: #000;
-	
+  text-decoration: none;
+  color: #000;
 }
 
 .footer-text {
-	font-size: 12px;
-	color: #FFF;
-	font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo-img {
-	color: white;
-	height: 30px;
-	width: 30px;
+  color: white;
+  height: 30px;
+  width: 30px;
 }
 
 .logo-img:hover {
-	color: black;
+  color: black;
 }
 
-
-
+/*# sourceMappingURL=baseStyling.css.map */

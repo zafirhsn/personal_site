@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Contact Me</title>
+	<title>Contact Me | Zafir Hasan</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,26 +14,83 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- StyleSheet for font from Google Fonts  -->
-
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Montserrat:300" rel="stylesheet">
+	
 	<!-- Stylesheet for font Awesome -->
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	
+	<!--Base style sheet-->
+	<link href="baseStyling.css" rel="stylesheet" type="text/css">
 
 	<!--Page style sheet-->
-	<link href="index.css" rel="stylesheet" type="text/css">
+	<link href="contact.css" rel="stylesheet" type="text/css">
 
 	<!-- Favicon  -->
 	<link rel="icon" type="image/png" href="#">
 
 	<style>
-	/* Internal Stylings to override Bootstrap */
 
 
-	</style> 
-
-
+	</style>
+	<link href="contact.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+
+	<nav class="navbar navbar-expand-sm nav-stylings fixed-top">
+  	  <a href="#" class="navbar-toggler"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span><i class="fas fa-bars fa-2x fa-fw"></i></span></a>
+<!--	  </button>-->
+	  
+<!--	  <a class="navbar-brand" href="#">Brand</a>-->
+	  
+
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  	<div class="navbar-nav">
+			<a class="nav-link" href="#">Home</a>
+			<a class="nav-link" href="http://www.zafirhasan.com/about.html">About</a>
+			<a class="nav-link active" href="http://zafirhasan.com/projects.html">Projects<span class="sr-only">(current)</span></a>
+			<a class="nav-link" href="#">Resume</a>
+			<a class="nav-link" href="#">Contact</a>
+		</div>	  
+	  </div>
+	  
+	</nav>
+	
+	<div class="container body-container">
+		<div class="row">
+			<div class="col">
+				<span>I'm always looking to expand my skills and work on new and exciting projects. Let me know if there's anything I can do for you using the form below. You can also send me an e-mail at zh754@nyu.edu</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<form class="needs-validate" novalidate>
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Your name">
+				  	</div>
+				  	<div class="form-group">
+						<label for="email">Email</label>
+				  		<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your email">		
+				  	</div>
+				  	<div class="form-group">
+						<label for="message">Message</label>
+						<textarea type="text" class="form-control" id="message" rows="10" placeholder="What's your project about?"></textarea>
+				  	</div>
+				  	<button type="submit" class="btn btn-primary">Submit</button>
+					
+				</form>
+				
+			</div>
+		</div>
+				
+						
+								
+												
+	</div>
+
 
 
 
@@ -44,14 +101,57 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script>
-
+		$(document).ready(function() {
+			
+		});
 
 
 	</script>
 	
 		
 	<footer>
-		
+		<div class="container">
+			<div class="row justify-content-center py-2">
+				<div class = "col top-row"> 
+					<a href="index.html" class="footer-link">Home</a>
+				</div>
+				<div class="col top-row"> 
+					<a href="about.html" class="footer-link">About</a>
+				</div>
+				<div class="col top-row">
+					<a href="projects.html" class="footer-link">Projects</a>
+				</div>
+				<div class="col top-row">
+					<a href="#" class="footer-link">Resume</a>
+				</div>
+				<div class="col top-row">
+					<a href="contact.html" class="footer-link">Contact</a>
+				</div>
+			</div>
+			
+			<div class="row justify-content-center py-2">
+				<div class="col-auto">
+					<a href="#"><i class="fab fa-github fa-2x fa-fw logo-img"></i></a>
+					
+				</div>
+				<div class="col-auto">
+					<a href="#"><i class="fab fa-linkedin fa-2x fa-fw logo-img"></i></a>
+				</div>
+			</div>
+			
+			<div class="row justify-content-center py-2 bottom-row">
+				<div class="col-auto">
+					<span class="footer-text">&copy; Copyright 2018. All rights reserved.</span>
+				</div>
+				<div class="col-auto"> 
+					<a href="#" class="footer-link footer-text">Sitemap</a>
+				</div>
+				<div class="col-auto">
+					<span class="footer-text">Contact me: zh754@nyu.edu</span>
+				</div>			
+			</div>
+			
+		</div>
 	</footer>
 </body>
 

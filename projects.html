@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- StyleSheet for font from Google Fonts  -->
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Montserrat:300" rel="stylesheet">
 
 	<!-- Stylesheet for font Awesome -->
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 	<link href="baseStyling.css" rel="stylesheet" type="text/css">
 
 	<!--Page style sheet-->
-	<!-- <link href="projects.css" rel="stylesheet" type="text/css"> -->
+	 <link href="projects.css" rel="stylesheet" type="text/css"> 
 
 	<!-- Favicon  -->
 	<link rel="icon" type="image/png" href="#">
@@ -38,12 +38,12 @@
 
 <body>
 
-	<div class="body-container"> 
+<!--	<div class="body-container"> -->
 
-	<nav class="navbar navber-sticky-top navbar-expand-sm nav-stylings">
-  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span><i class="fas fa-bars fa-2x fa-fw"></i></span>
-	  </button>
+	<nav class="navbar navbar-expand-sm nav-stylings fixed-top">
+  	  <a href="#" class="navbar-toggler"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span><i class="fas fa-bars fa-2x fa-fw"></i></span></a>
+<!--	  </button>-->
 	  
 <!--	  <a class="navbar-brand" href="#">Brand</a>-->
 	  
@@ -52,8 +52,8 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	  	<div class="navbar-nav">
 			<a class="nav-link" href="#">Home</a>
-			<a class="nav-link active" href="http://www.zafirhasan.com/about.html">About<span class="sr-only">(current)</span></a>
-			<a class="nav-link" href="http://zafirhasan.com/projects.html">Projects</a>
+			<a class="nav-link" href="http://www.zafirhasan.com/about.html">About</a>
+			<a class="nav-link active" href="http://zafirhasan.com/projects.html">Projects<span class="sr-only">(current)</span></a>
 			<a class="nav-link" href="#">Resume</a>
 			<a class="nav-link" href="#">Contact</a>
 		</div>	  
@@ -61,16 +61,42 @@
 	  
 	</nav>
 
-	<div class="container">
+	<div class="container body-container">
 		<div class="row"> 
 			<div class="col">
 				<span>Projects</span>
 				<span>Statify</span>
-				<span>Statify is site that presents users their listening statistics on Spotify in a clean, user friendly presentation. Users can see their top tracks of the last year, last 6 months, and last 4 weeks. Users can also see their top artists for the same three time periods. The site was made in HTML, CSS, and JavaScript. The site was made to be mobile-friendly using Bootstrap. JQuery's ajax methods communicate with Spotify's web API according to the OAuth2 authentication model.  </span> 
-				<span>PriCoSha</span>
-				<span>PriCoSha is a social media site where users can comment, like, tag, post, and add/delete friends.
+				<span>Statify is a site that allows Spotify users to see their listening habits and statistics in a clean, user-friendly manner. Listeners can view their top artists and songs of all time, of the last 6 months, and of the last 4 weeks. They can also see how popular their favorite songs and artists are on Spotify on a scale from 1 to 100. Users can also see other song attributes such as the 'danceability' and 'happiness' of their top tracks. Statify does not store any information on users. </span>
+				
+				<span>How it was made</span>
+				<span>My main goal in creating this site was to allow Spotify users on any device or browser to be able to log in and view their listening habits. As a result, cross-browser compatibility a fully responsive design were the top priorities. The site was created with a mobile-first attitude using Bootstrap 4. JQuery's ajax allowed for communnication with Spotify's web API according to the OAuth2 authentication model. This site was made using HTML, CSS, and JavaScript. The site is currently live and can be found at the link below.</span> 
 			</div>
-
+			<div class="col">
+				<span>PriCoSha</span>
+				<span>PriCoSha is a rudimentary social media site where users can create an account, comment, like, tag, post, add/delete friends, and direct message people, among other features.</span> 
+				
+				<span>How it was made</span>
+				<span>The main goal of this project was to display a deep understanding of SQL and database design. The site communincates with a database in MySQL in order to store and display information to the user. Tables were created for content, comments, friendgroups, members, people, sharing, and content tags. Flask for Python was used to query the database with the aim to reduce queries as much as possible to ensure the site remained fast. PriCoSha was made in HTML, CSS, Python and MySQL.</span>
+			</div>
+			<div class="col">
+				<span>Q</span>
+				<span>Q is a 2D platform game where the objective is to make it across the map. The players controls their block using the left and right arrow keys and the spacebar to jump. Enemies will chase after the player and shoot lasers trying to stop them. Sounds like a simple platformer, but the twist in Q is that time stops when the player stops. Time only moves forward when the player is moving. Use that to your advantage as you make your way through 3 levels of increasing difficulty.</span>
+				
+				<span>How it was made</span>
+				<span>The main goal of Q was to use OpenGL to create a platformer that consisted of at least 3 levels, enemy A.I., sound effects and music, animations, and a title screen and game mode. Q was made in C++.</span>
+			</div>
+			<div class="col">
+				<span>Network Re-design for Global Design Alternatives (GDA)</span>
+				
+				<span>This project outlines a complete network infrastructure for a hypothetical architecture company called Global Design Alternatives (GDA). It includes an IP addressing schema for all offices, LAN designs for every office, the identification of every applicable protocol used in each layer of the network, the locations for the main data centers, calculations of throughout, acceptable delays, and bandwidth, and an outline for security measures. 
+				
+				The premise of the problem is as follows: You are a team of network architects at a well-known IT consulting firm, Global Tech. Your firm just signed a contract with a mid-size global full service architecture company, Global Design Alternatives (GDA). There are ongoing complaints about slow access to files, e-mail delivery, poor voice quality and various applications crashing due to poorly designed network. The company is planning significant expansion into the new markets by decreasing time-to-market for their core set of products and increasing the global workforce hiring. 
+ 				</span>
+ 				
+				<span>How it was made</span>
+				<span>The main goal of this project is to display a deep understanding of computer networks from the physical layer to the application layer. All information about GDA was relevant in making crucial decisions about the network infrastructure. Routing voIP traffic over an MPLS network instead of VPN through public internet, using VLANs to connect departments in an office, calculating bandwidth requirements for each department, and choosing MPLS in order to engineer traffic on the network were some of the decisions made when designing the network. The full document outline can be found here</span>
+				
+			</div>
 		</div>
 	</div> 
 
@@ -104,19 +130,19 @@
 	<footer>
 		<div class="container">
 			<div class="row justify-content-center py-2">
-				<div class = "col-auto"> 
+				<div class = "col top-row"> 
 					<a href="index.html" class="footer-link">Home</a>
 				</div>
-				<div class="col-auto"> 
+				<div class="col top-row"> 
 					<a href="about.html" class="footer-link">About</a>
 				</div>
-				<div class="col-auto">
+				<div class="col top-row">
 					<a href="projects.html" class="footer-link">Projects</a>
 				</div>
-				<div class="col-auto">
+				<div class="col top-row">
 					<a href="#" class="footer-link">Resume</a>
 				</div>
-				<div class="col-auto">
+				<div class="col top-row">
 					<a href="contact.html" class="footer-link">Contact</a>
 				</div>
 			</div>
@@ -146,7 +172,7 @@
 		</div>
 		
 	</footer>
-</div>
+<!--</div>-->
 
 </body>
 

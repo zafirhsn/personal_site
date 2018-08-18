@@ -1,0 +1,47 @@
+/* Scss Document */
+
+@import 'variables';
+
+@mixin fade() {
+	-webkit-transition: color 0.15s ease-out; 
+	-moz-transition: color 0.15s ease-out;
+	-o-transition: color 0.15s ease-out;
+	-ms-transition:color 0.15s ease-out;
+	transition: color 0.15s ease-out;
+}
+
+%tech-icon {
+	@include fade();
+	color: #7B7B7B;
+}
+
+
+
+h2, h3, h4, h5 {
+	font-family: $base-serif;
+	
+}
+
+.js-icon {
+	@extend %tech-icon;
+	
+	&:hover {
+		color: #f3da34;
+	}
+}
+
+.css-icon {
+	@extend %tech-icon;
+	
+	&:hover {
+		color: #1391dd;
+	}
+}
+
+.html-icon {
+	@extend %tech-icon;
+	
+	&:hover {
+		color: #ee5b30;
+	}
+}

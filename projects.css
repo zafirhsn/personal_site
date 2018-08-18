@@ -1,4 +1,30 @@
-@charset "utf-8";
-/* CSS Document */
+/* Scss Document */
+/* Scss Document */
+/*Color variables*/
+/*Font stack*/
+.html-icon, .css-icon, .js-icon {
+  -webkit-transition: color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out;
+  -o-transition: color 0.15s ease-out;
+  -ms-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+  color: #7B7B7B;
+}
 
+h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+}
 
+.js-icon:hover {
+  color: #f3da34;
+}
+
+.css-icon:hover {
+  color: #1391dd;
+}
+
+.html-icon:hover {
+  color: #ee5b30;
+}
+
+/*# sourceMappingURL=projects.css.map */

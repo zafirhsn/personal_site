@@ -1,0 +1,44 @@
+/* Scss Document */
+/* Scss Document */
+/*Color variables*/
+/*Font stack*/
+.resume {
+  height: 1100px;
+  width: 100%;
+}
+
+site-button {
+  margin-right: 5px;
+  padding-top: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: 250px;
+  height: 55px;
+  border-radius: 35px;
+  border-width: 1px;
+  border-color: #01849C;
+  background-color: #11C8ED;
+}
+site-button:hover {
+  background-color: #01849C;
+}
+site-button .live-link {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+site-button .live-link:hover {
+  color: white;
+}
+
+i {
+  color: #11C8ED;
+}
+i:hover {
+  color: #01849C;
+}
+
+/*# sourceMappingURL=resume.css.map */

@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5 {
 h1  {
 	text-align: center;
 	border-radius: 10px;
-	width: 130px;
+	width: 100%;
 	background-color:#E2F8FC;
 //		#C7F1F9;
 	
@@ -72,21 +72,11 @@ h4 {
 	width: 200px;
 }
 
-#pricosha {
+#pricosha, #qgame, #network {
 	@extend h1;
-	width: 180px;
+//	width: 180px;
 }
 
-
-#qgame {
-	@extend h1;
-	width: 50px;
-}
-
-#network {
-	@extend h1;
-	width: 460px;
-}
 
 
 site-button {

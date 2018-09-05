@@ -16,21 +16,21 @@ span {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, #network, #qgame, #pricosha, h2, h3, h4, #statify-how, #pricosha-how, #qgame-how, #network-how, h5 {
+h1, #pricosha, #qgame, #network, h2, h3, h4, #statify-how, #pricosha-how, #qgame-how, #network-how, h5 {
   font-weight: 400;
   font-family: "Playfair Display", serif;
 }
 
-h1, #network, #qgame, #pricosha, h4, #statify-how, #pricosha-how, #qgame-how, #network-how {
+h1, #pricosha, #qgame, #network, h4, #statify-how, #pricosha-how, #qgame-how, #network-how {
   text-align: center;
   border-radius: 10px;
-  width: 130px;
+  width: 100%;
   background-color: #E2F8FC;
 }
-h1 a, #network a, #qgame a, #pricosha a, h4 a, #statify-how a, #pricosha-how a, #qgame-how a, #network-how a {
+h1 a, #pricosha a, #qgame a, #network a, h4 a, #statify-how a, #pricosha-how a, #qgame-how a, #network-how a {
   color: #01849C;
 }
-h1 a:hover, #network a:hover, #qgame a:hover, #pricosha a:hover, h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #network-how a:hover {
+h1 a:hover, #pricosha a:hover, #qgame a:hover, #network a:hover, h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #network-how a:hover {
   color: #03C4E8;
   text-decoration: none;
 }
@@ -47,18 +47,6 @@ h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #ne
 
 #statify-how, #pricosha-how, #qgame-how, #network-how {
   width: 200px;
-}
-
-#pricosha {
-  width: 180px;
-}
-
-#qgame {
-  width: 50px;
-}
-
-#network {
-  width: 460px;
 }
 
 site-button, .github-link {

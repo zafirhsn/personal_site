@@ -1,0 +1,48 @@
+/* Scss Document */
+
+@import 'variables';
+
+.resume {
+	height: 1100px;
+	width: 100%;
+}
+
+site-button {
+	margin-right: 5px;
+	padding-top: 5px;
+	font-family: $base-sans-serif;
+	text-align: center;
+	display: inline-block;
+	width: 250px;
+	height: 55px;
+	border-radius: 35px;
+//	border-style: solid;
+	border-width: 1px;
+	border-color: $base-dark-20;
+	background-color: $base-color;
+	
+	&:hover {
+		background-color: $base-dark-20;
+	}
+	
+	.live-link {
+		height: 100%;
+		width: 100%;
+		display: block;
+		text-decoration: none;
+		color: black;
+		
+		&:hover {
+			color: white;
+		}
+	}	
+}
+
+i {
+	color: $base-color;
+	
+	&:hover {
+		color: $base-dark-20;
+	}
+}
+

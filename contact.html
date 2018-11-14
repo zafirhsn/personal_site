@@ -24,10 +24,10 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	
 	<!--Base style sheet-->
-	<link href="baseStyling.css" rel="stylesheet" type="text/css">
+	<link href="css/baseStyling.css" rel="stylesheet" type="text/css">
 
 	<!--Page style sheet-->
-	<link href="contact.css" rel="stylesheet" type="text/css">
+	<link href="css/contact.css" rel="stylesheet" type="text/css">
 
 	<!-- Favicon  -->
 	<link rel="icon" type="image/png" href="#">
@@ -36,7 +36,6 @@
 
 
 	</style>
-	<link href="contact.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -52,11 +51,11 @@
 
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	  	<div class="navbar-nav">
-			<a class="nav-link" href="#">Home</a>
+			<a class="nav-link" href="http://www.zafirhasan.com">Home</a>
 			<a class="nav-link" href="http://www.zafirhasan.com/about.html">About</a>
-			<a class="nav-link active" href="http://zafirhasan.com/projects.html">Projects<span class="sr-only">(current)</span></a>
-			<a class="nav-link" href="#">Resume</a>
-			<a class="nav-link" href="#">Contact</a>
+			<a class="nav-link" href="http://zafirhasan.com/projects.html">Projects</a>
+			<a class="nav-link" href="http://www.zafirhasan.com/resume.html">Resume</a>
+			<a class="nav-link active" href="http://www.zafirhasan.com/contact.html">Contact<span class="sr-only">(current)</span></a>
 		</div>	  
 	  </div>
 	  
@@ -70,7 +69,7 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<form class="needs-validate" novalidate>
+				<form action="simpleCGI.py" method="GET" class="needs-validate" novalidate>
 					<div class="form-group">
 						<label for="name">Name</label>
 						<input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Your name">

@@ -1,0 +1,132 @@
+/* CSS Document */
+/* Scss Document */
+/*Color variables*/
+/*Font stack*/
+/*Animation mixins*/
+/*Base stylings for all pages*/
+/*Document styling*/
+html, body {
+  height: 100%;
+  /*	position: relative;*/
+  /*	background-color: #69DBF0;*/
+}
+
+.body-container {
+  margin-top: 25%;
+}
+@media screen and (min-width: 576px) {
+  .body-container {
+    margin-top: 15%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .body-container {
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .body-container {
+    margin-top: 7%;
+  }
+}
+
+/*Nav stylings*/
+.nav-stylings {
+  background-color: #01849C;
+  opacity: 0.9;
+  text-align: center;
+  padding: 0;
+}
+
+.navbar-toggler {
+  border: none;
+  color: #fff;
+  margin-left: -5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-toggler:hover {
+  color: white;
+}
+
+.nav-link {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 20px;
+  border-radius: 0px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+  -ms-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
+  transition: background-color 0.25s ease, border-radius 0.25s ease;
+}
+.nav-link:hover {
+  color: #fff;
+  background-color: #11C8ED;
+  /*
+  border-color:#11C8ED;
+  border-width: 1px;
+  border-style: solid;
+  */
+  /*	margin-right: -2px; To keep the links from shifting after adding the border*/
+}
+
+.active {
+  color: #fff;
+  background-color: #11C8ED;
+}
+
+/*Footer styling*/
+@media screen and (min-width: 540px) {
+  .bottom-row {
+    margin-left: -70px;
+  }
+}
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 5%;
+  padding-top: 10px;
+  background-color: #01849C;
+}
+
+.top-row {
+  text-align: center;
+}
+
+.footer-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #FFF;
+}
+
+.footer-link:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-img {
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.logo-img:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=baseStyling.css.map */

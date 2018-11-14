@@ -23,7 +23,7 @@
 		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 		
 		<!--Page style sheet-->
-		<link href="index.css" rel="stylesheet" type="text/css">
+		<link href="css/index.css" rel="stylesheet" type="text/css">
 		
 		<!-- Favicon  -->
 		<link rel="icon" type="image/png" href="#">
@@ -52,6 +52,9 @@
 					<a href="about.html"><i class="fas fa-user fa-5x fa-fw"></i><p class="but-text">About Me</p></a>	
 				</home-button>
 			</div>
+			
+<!--
+			
 			<div class="col-sm">
 				<home-button>
 					<a href="technologies.html"><i class="fas fa-database fa-5x fa-fw"></i><p class="but-text">Technologies</p></a>		
@@ -62,6 +65,9 @@
 					<a href="work.html"><i class="fas fa-briefcase fa-5x fa-fw"></i><p class="but-text">Work</p></a>	
 				</home-button>
 			</div>
+-->
+			
+			
 			<div class="col-sm">
 				<home-button>
 					<a href="projects.html"><i class="fas fa-folder-open fa-5x fa-fw"></i><p class="but-text">Projects</p></a>
@@ -92,11 +98,12 @@
 		<script>
 			//Script, should I need one
 			$(document).ready(function() {
-				var homeArray = ["url(portfolio-1.jpeg)", "url(portfolio-2.jpeg)", "url(portfolio-3.jpeg)", "url(portfolio-4.png)", "url(portfolio-5.jpeg)"];
+				var homeArray = ["url(imgs/portfolio-1.jpeg)", "url(imgs/portfolio-2.jpeg)", "url(imgs/portfolio-3.jpeg)", "url(imgs/portfolio-4.png)", "url(imgs/portfolio-5.jpeg)"];
 				var homePic = homeArray[Math.floor(Math.random() * 5)];
 				console.log(homePic);
 				
-				$("body.bg").css({"background-image" : homePic});
+				// $(".bg").css({"background-image" : homePic});
+				// $(".bg").css({"background-color" : "black"});
 				
 			});
 		</script>

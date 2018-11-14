@@ -1,0 +1,129 @@
+/* Scss Document */
+/* Scss Document */
+/*Color variables*/
+/*Font stack*/
+.c-icon, .mysql-icon, .python-icon, .html-icon, .css-icon, .js-icon {
+  -webkit-transition: color 0.15s ease-out;
+  -moz-transition: color 0.15s ease-out;
+  -o-transition: color 0.15s ease-out;
+  -ms-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+  color: #7B7B7B;
+}
+
+span {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, #pricosha, #qgame, #network, h2, h3, h4, #statify-how, #pricosha-how, #qgame-how, #network-how, h5 {
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+
+h1, #pricosha, #qgame, #network, h4, #statify-how, #pricosha-how, #qgame-how, #network-how {
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #E2F8FC;
+}
+h1 a, #pricosha a, #qgame a, #network a, h4 a, #statify-how a, #pricosha-how a, #qgame-how a, #network-how a {
+  color: #01849C;
+}
+h1 a:hover, #pricosha a:hover, #qgame a:hover, #network a:hover, h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #network-how a:hover {
+  color: #03C4E8;
+  text-decoration: none;
+}
+
+h4, #statify-how, #pricosha-how, #qgame-how, #network-how {
+  background-color: #FFF1D4;
+}
+h4 a, #statify-how a, #pricosha-how a, #qgame-how a, #network-how a {
+  color: #AB7600;
+}
+h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #network-how a:hover {
+  color: #FDAE00;
+}
+
+#statify-how, #pricosha-how, #qgame-how, #network-how {
+  width: 200px;
+}
+
+site-button, .github-link {
+  margin-right: 5px;
+  padding-top: 5px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #01849C;
+  background-color: #11C8ED;
+}
+site-button:hover, .github-link:hover {
+  background-color: #01849C;
+}
+site-button .live-link, .github-link .live-link {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+site-button .live-link:hover, .github-link .live-link:hover {
+  color: white;
+}
+
+.github-link {
+  background-color: #6cc644;
+}
+.github-link:hover {
+  background-color: #358D10;
+}
+
+.js-icon:hover {
+  color: #f3da34;
+}
+
+.css-icon:hover {
+  color: #1391dd;
+}
+
+.html-icon:hover {
+  color: #ee5b30;
+}
+
+.python-icon:hover {
+  color: #fed04c;
+}
+
+.c-icon, .mysql-icon {
+  -webkit-transition: background-color 0.15s ease-out;
+  -moz-transition: background-color 0.15s ease-out;
+  -o-transition: background-color 0.15s ease-out;
+  -ms-transition: background-color 0.15s ease-out;
+  transition: background-color 0.15s ease-out;
+  display: inline-block;
+  height: 28px;
+  width: 28px;
+  border-radius: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/c_logo.png");
+  background-color: #7B7B7B;
+}
+.c-icon:hover, .mysql-icon:hover {
+  background-color: #1077c4;
+}
+
+.mysql-icon {
+  margin-left: 7px;
+  background-image: url("../imgs/mysql.png");
+}
+.mysql-icon:hover {
+  background-color: #e0842a;
+}
+
+/*# sourceMappingURL=projects.css.map */

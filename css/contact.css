@@ -1,6 +1,26 @@
 /* Scss Document */
-#name, #message, #email {
-  width: 60%;
+/* Scss Document */
+/*Color variables*/
+/*Font stack*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#name, #message, #email, #project {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  color: white;
+  background-color: #11C8ED;
+}
+button:hover {
+  background-color: #01849C;
+}
+
+footer {
+  position: relative;
+  bottom: -180px;
 }
 
 /*# sourceMappingURL=contact.css.map */

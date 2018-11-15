@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- StyleSheet for font from Google Fonts  -->
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Montserrat:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Montserrat:300" rel="stylesheet">
 	
 	<!-- Stylesheet for font Awesome -->
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -62,31 +62,53 @@
 	</nav>
 	
 	<div class="container body-container">
-		<div class="row">
+		<div class="row mb-5">
 			<div class="col">
-				<span>I'm always looking to expand my skills and work on new and exciting projects. Let me know if there's anything I can do for you using the form below! You can also send me an e-mail at zh754@nyu.edu</span>
+				<span>I'm always looking to expand my skills and work on new and exciting projects. If you need to redesign your site, create a new site from scratch, create a WordPress site or create or update a web application, I can help! Tell me about your project using the form below and I'll  see what I can do  </span>
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-1"></div>
 			<div class="col">
-				<form action="simpleCGI.py" method="GET" class="needs-validate" novalidate>
+				<form action="https://formspree.io/zh754@nyu.edu" method="POST" class="needs-validation center" novalidate>
 					<div class="form-group">
 						<label for="name">Name</label>
-						<input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Your name">
-				  	</div>
+						<input type="text" class="form-control" name="name" id="name" aria-describedby="name" placeholder="Your name" required>
+						<div class="valid-feedback">Looks good!</div>
+						<div class="invalid-feedback">Enter a valid name</div>
+					</div>
+
 				  	<div class="form-group">
 						<label for="email">Email</label>
-				  		<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your email">		
-				  	</div>
+							<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Your email" required>	
+							<div class="valid-feedback">Looks good!</div>
+							<div class="invalid-feedback">Enter a valid email</div>
+						</div>
+
+						<div class="form-group">
+							<label for="project">Project</label>
+							<input type="text" class="form-control" name="project" id="project" aria-describedby="project" placeholder="Brief description of your project (redesign, need a web app, WordPress site etc.)" required>
+							<div class="valid-feedback">Looks good!</div>
+							<div class="invalid-feedback">Enter a valid project description</div>
+						</div>
+
+						<div class="form-group">
+							<input type="hidden" name="_subject" value="PORTFOLIO SITE">
+						</div>
+
 				  	<div class="form-group">
-						<label for="message">Message</label>
-						<textarea type="text" class="form-control" id="message" rows="10" placeholder="What's your project about?"></textarea>
-				  	</div>
-				  	<button type="submit" class="btn btn-primary">Submit</button>
+							<label for="message">Message</label>
+							<textarea type="text" class="form-control" name="message" id="message" rows="7" placeholder="Anything else?"></textarea>
+						</div>
+						
+						<div class="col text-center mt-5">
+						<button type="submit" class="btn btn-lg">Submit</button>
+					</div>
 					
 				</form>
-				
 			</div>
+			<div class="col-1"></div>
+
 		</div>
 				
 						
@@ -104,9 +126,23 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script>
-		$(document).ready(function() {
-			
-		});
+		(function() {
+			'use strict';
+			window.addEventListener('load', function() {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function(form) {
+					form.addEventListener('submit', function(event) {
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
 
 
 	</script>

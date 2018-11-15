@@ -1,7 +1,27 @@
 /* Scss Document */
 
-#name, #message, #email {
-	width: 60%;
+@import 'variables';
+
+body {
+	font-family: $base-sans-serif;
 }
 
+#name, #message, #email, #project {
+	// width: 80%;
+	font-family: $base-sans-serif;
+}
+
+button {
+	color: white;
+	background-color: $base-color;
+
+	&:hover {
+		background-color: $base-dark-20;
+	}
+}
+
+footer {
+	position: relative;
+	bottom: -180px;
+}
 

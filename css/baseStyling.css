@@ -46,13 +46,12 @@ html, body {
   padding-bottom: 10px;
 }
 .navbar-toggler:hover {
-  color: white;
+  color: #11C8ED;
 }
 
 .nav-link {
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
   color: #fff;
   margin-left: 5px;
   font-size: 20px;
@@ -104,7 +103,6 @@ footer {
 
 .footer-link {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
   color: #FFF;
 }
 

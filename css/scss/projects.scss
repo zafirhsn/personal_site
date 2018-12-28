@@ -10,6 +10,14 @@
 	transition: color 0.15s ease-out;
 }
 
+@mixin filter-fade {
+	-webkit-transition: filter 0.15s ease-out; 
+	-moz-transition: filter 0.15s ease-out;
+	-o-transition: filter 0.15s ease-out;
+	-ms-transition: filter 0.15s ease-out;
+	transition: filter 0.15s ease-out;
+}
+
 @mixin bg-fade() {
 	-webkit-transition: background-color 0.15s ease-out; 
 	-moz-transition: background-color 0.15s ease-out;
@@ -67,12 +75,12 @@ h4 {
 }
 
 
-#statify-how, #pricosha-how, #qgame-how, #network-how {
+#statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how {
 	@extend h4;
 	width: 200px;
 }
 
-#pricosha, #qgame, #network {
+#pricosha, #qgame, #network, #shooterio {
 	@extend h1;
 //	width: 180px;
 }
@@ -155,30 +163,61 @@ site-button {
 	}
 }
 
-.c-icon {
+.nodejs-icon {
 	@extend %tech-icon;
-	@include bg-fade();
-	display: inline-block;
-	height: 28px;
-	width: 28px;
-	border-radius: 5px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-image: url("c_logo.png");
-	background-color: #7B7B7B;
-	
+
 	&:hover {
-		background-color: #1077c4;
+		color: #026e00;
 	}
-	
 }
 
-.mysql-icon {
-	@extend .c-icon;
+
+.p5-icon {
+	@extend %tech-icon;
+	@include filter-fade();
+
+	filter: grayscale(100%);
+
+	display: inline-block;
+	height: 20px;
+	width: 45px;
 	margin-left: 7px;
-	background-image: url("mysql.png");
-	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../../imgs/p5-logo.png");	
+
 	&:hover {
-		background-color: #e0842a;	
+		filter: grayscale(0%);
 	}
+}
+
+.c-icon {
+	@extend %tech-icon;
+	@extend .p5-icon;
+	height: 35px;
+	width: 35px;
+	background-image: url("../../imgs/c_logo.png");	
+}
+
+
+.express-icon {
+	@extend %tech-icon;
+	display: inline-block;
+	height: 15px;
+	width: 70px;
+	margin-left: 7px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../../imgs/express-logo.png");	
+}
+
+
+.mysql-icon {
+	@extend .p5-icon;
+	position: relative;
+	top: 20px;
+	height: 70px;
+	width: 70px;
+	margin-left: 7px;
+	background-image: url("../../imgs/mysql.png");
 }

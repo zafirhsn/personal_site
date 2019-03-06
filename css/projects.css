@@ -16,36 +16,36 @@ span {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, #pricosha, #qgame, #network, #shooterio, h2, h3, h4, #statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how, h5 {
+h1, #pricosha, #qgame, #network, #shooterio, h2, h3, h4, #statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how, #neural-how, h5 {
   font-weight: 400;
   font-family: "Playfair Display", serif;
 }
 
-h1, #pricosha, #qgame, #network, #shooterio, h4, #statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how {
+h1, #pricosha, #qgame, #network, #shooterio, h4, #statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how, #neural-how {
   text-align: center;
   border-radius: 10px;
   width: 100%;
   background-color: #E2F8FC;
 }
-h1 a, #pricosha a, #qgame a, #network a, #shooterio a, h4 a, #statify-how a, #pricosha-how a, #qgame-how a, #network-how a, #shooterio-how a {
+h1 a, #pricosha a, #qgame a, #network a, #shooterio a, h4 a, #statify-how a, #pricosha-how a, #qgame-how a, #network-how a, #shooterio-how a, #neural-how a {
   color: #01849C;
 }
-h1 a:hover, #pricosha a:hover, #qgame a:hover, #network a:hover, #shooterio a:hover, h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #network-how a:hover, #shooterio-how a:hover {
+h1 a:hover, #pricosha a:hover, #qgame a:hover, #network a:hover, #shooterio a:hover, h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #network-how a:hover, #shooterio-how a:hover, #neural-how a:hover {
   color: #03C4E8;
   text-decoration: none;
 }
 
-h4, #statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how {
+h4, #statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how, #neural-how {
   background-color: #FFF1D4;
 }
-h4 a, #statify-how a, #pricosha-how a, #qgame-how a, #network-how a, #shooterio-how a {
+h4 a, #statify-how a, #pricosha-how a, #qgame-how a, #network-how a, #shooterio-how a, #neural-how a {
   color: #AB7600;
 }
-h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #network-how a:hover, #shooterio-how a:hover {
+h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #network-how a:hover, #shooterio-how a:hover, #neural-how a:hover {
   color: #FDAE00;
 }
 
-#statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how {
+#statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how, #neural-how {
   width: 200px;
 }
 

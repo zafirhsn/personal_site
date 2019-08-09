@@ -46,7 +46,7 @@ html, body {
   padding-bottom: 10px;
 }
 .navbar-toggler:hover {
-  color: #11C8ED;
+  color: #0D9DBA;
 }
 
 .nav-link {
@@ -67,7 +67,7 @@ html, body {
 }
 .nav-link:hover {
   color: #fff;
-  background-color: #11C8ED;
+  background-color: #0D9DBA;
   /*
   border-color:#11C8ED;
   border-width: 1px;
@@ -78,7 +78,7 @@ html, body {
 
 .active {
   color: #fff;
-  background-color: #11C8ED;
+  background-color: #0D9DBA;
 }
 
 /*Footer styling*/

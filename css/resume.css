@@ -2,6 +2,11 @@
 /* Scss Document */
 /*Color variables*/
 /*Font stack*/
+/* Fonts */
+@font-face {
+  font-family: "Lato-regular";
+  src: url("../../fonts/Lato/Lato-Regular.ttf");
+}
 .resume {
   height: 390px;
   height: 100%;
@@ -41,7 +46,7 @@
 site-button {
   margin-right: 5px;
   padding-top: 11px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato-regular";
   font-size: 20px;
   text-align: center;
   display: inline-block;

@@ -18,5 +18,11 @@ $red-light-10: #FF4E3C;
 $red-light-20: #FF7A6C;
 
 /*Font stack*/
+/* Fonts */
+@font-face {
+	font-family: "Lato-regular";
+	src: url("../../fonts/Lato/Lato-Regular.ttf")
+}
+
 $base-serif: 'Playfair Display', serif;
-$base-sans-serif: 'Montserrat', sans-serif;
+$base-sans-serif: 'Lato-regular';

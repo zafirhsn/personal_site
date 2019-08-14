@@ -2,6 +2,11 @@
 /* Scss Document */
 /*Color variables*/
 /*Font stack*/
+/* Fonts */
+@font-face {
+  font-family: "Lato-regular";
+  src: url("../../fonts/Lato/Lato-Regular.ttf");
+}
 .express-icon, .c-icon, .p5-icon, .mysql-icon, .nodejs-icon, .python-icon, .html-icon, .css-icon, .js-icon {
   -webkit-transition: color 0.15s ease-out;
   -moz-transition: color 0.15s ease-out;
@@ -13,7 +18,7 @@
 
 span {
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato-regular";
 }
 
 h1, #pricosha, #qgame, #network, #shooterio, h2, h3, h4, #statify-how, #pricosha-how, #qgame-how, #network-how, #shooterio-how, #neural-how, h5 {
@@ -52,7 +57,7 @@ h4 a:hover, #statify-how a:hover, #pricosha-how a:hover, #qgame-how a:hover, #ne
 site-button, .github-link {
   margin-right: 5px;
   padding-top: 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato-regular";
   text-align: center;
   display: inline-block;
   width: 150px;

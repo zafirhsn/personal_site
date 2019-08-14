@@ -2,12 +2,17 @@
 /* Scss Document */
 /*Color variables*/
 /*Font stack*/
+/* Fonts */
+@font-face {
+  font-family: "Lato-regular";
+  src: url("../../fonts/Lato/Lato-Regular.ttf");
+}
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato-regular";
 }
 
 #name, #message, #email, #project {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato-regular";
 }
 
 button {

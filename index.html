@@ -33,6 +33,7 @@
 		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 		
 		<!--Page style sheet-->
+		<link href="css/baseStyling.css" rel="stylesheet" type="text/css">
 		<link href="css/index.css" rel="stylesheet" type="text/css">
 		
 		<!-- Favicon  -->
@@ -47,54 +48,34 @@
 
 
 	<body>
-	<div class="bg">
+		<div class="container">
+		<nav class="navbar navbar-expand-sm nav-stylings fixed-top">
+				<a href="#" class="navbar-toggler"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span><i class="fas fa-bars fa-2x fa-fw"></i></span></a>
+	<!--	  </button>-->
+			
+	<!--	  <a class="navbar-brand" href="#">Brand</a>-->
+			
 	
-	<div class="container">
-		<div class="row"> 
-			<div class="col">
-				<h1>Zafir Hasan</h1>
-				<h3>Full Stack Developer</h3>
-			</div>
-		</div>
-		<div class="row home-row">
-			<div class="col-sm">
-				<home-button>
-					<a href="about.html"><i class="fas fa-user fa-5x fa-fw"></i><p class="but-text">About Me</p></a>	
-				</home-button>
+	
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="navbar-nav">
+				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link active" href="#">About<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="projects.html">Projects</a>
+				<a class="nav-link" href="resume.html">Resume</a>
+				<a class="nav-link" href="contact.html">Contact</a>
+			</div>	  
 			</div>
 			
-<!--
-			
-			<div class="col-sm">
-				<home-button>
-					<a href="technologies.html"><i class="fas fa-database fa-5x fa-fw"></i><p class="but-text">Technologies</p></a>		
-				</home-button>
-			</div>
-			<div class="col-sm">
-				<home-button>
-					<a href="work.html"><i class="fas fa-briefcase fa-5x fa-fw"></i><p class="but-text">Work</p></a>	
-				</home-button>
-			</div>
--->
-			
-			
-			<div class="col-sm">
-				<home-button>
-					<a href="projects.html"><i class="fas fa-folder-open fa-5x fa-fw"></i><p class="but-text">Projects</p></a>
-				</home-button>
-			</div>
-			<div class="col-sm">
-				<home-button>
-					<a href="resume.html"><i class="fas fa-file fa-5x fa-fw"></i><p class="but-text">Resume</p></a>	
-				</home-button>
-			</div>
-			<div class="col-sm">
-				<home-button>
-					<a href="contact.html"><i class="fas fa-envelope fa-5x fa-fw"></i><p class="but-text">Contact Me</p></a>		
-				</home-button>
-			</div>
-		</div>
+		</nav>
 	</div>
+	
+	<div class="container container-body">
+			<!-- <div class="row">
+				
+			</div> -->
+		
 	</div>
 	
 	
@@ -108,12 +89,7 @@
 		<script>
 			//Script, should I need one
 			$(document).ready(function() {
-				var homeArray = ["url(imgs/portfolio-1.jpeg)", "url(imgs/portfolio-2.jpeg)", "url(imgs/portfolio-3.jpeg)", "url(imgs/portfolio-4.png)", "url(imgs/portfolio-5.jpeg)"];
-				var homePic = homeArray[Math.floor(Math.random() * 5)];
-				console.log(homePic);
-				
-				// $(".bg").css({"background-image" : homePic});
-				// $(".bg").css({"background-color" : "black"});
+
 				
 			});
 		</script>

@@ -3,9 +3,24 @@
 
 html, body {
 	height: 100%;
+	margin: 0;
+	background: linear-gradient(180deg, #FEFEFE 67.19%, #CFF3FB 80.21%, rgba(17, 200, 237, 0.4) 100%);
 }
 
-.bg:before {
+.container-body {
+	height: 100%;
+	width: 100%;
+}
+
+.row {
+	background-color: #11C8ED;
+	opacity: 50%;
+	height: 100px;
+}
+
+
+
+/* .bg:before {
 	content: "";
   	position: fixed;
   	top: -5%;
@@ -18,37 +33,39 @@ html, body {
  	width: 110%;
   	height: 110%;
 
-	background-image: url("../imgs/portfolio-5.jpeg");
+	
 /*	background-attachment: fixed;*/
-	background-size: cover;
+	
+	/* background-size: cover; */
 	
 /*	background-repeat: no-repeat;*/
 /*	background-position: center;*/
 /*				color: #fff;*/
 
-	-webkit-filter: blur(5px);
+	/* -webkit-filter: blur(5px);
 	-moz-filter: blur(5px);
 	-o-filter: blur(5px);
 	-ms-filter: blur(5px);
 	filter: blur(5px);
-}
+} */
 
-.bg {
-/*	height: 100%;*/
+/* .bg {
+	height: 100%;
 	overflow: auto;
 	position: relative;
 
-}
+} 
+*/
 
 footer {
 	background-color: #555555;
 
 }
 
-div.container-fluid {
+/* div.container-fluid {
 	position: fixed;
 	z-index: 1;
-}
+} */
 
 
 /*div.col-sm:nth-child(odd) {

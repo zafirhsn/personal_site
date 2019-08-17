@@ -1,14 +1,18 @@
 /* Scss Document */
 
 /*Color variables*/
-$base-color: #0D9DBA;
-$base-light-10: #3CD3EF;
+$base-color: #11C8ED;
+$base-light: #6BFBFF;
+
+
 $base-light-20: #69DBF0;
 $base-dark-10: #03C4E8;
 $base-dark-20: #01849C;
 
+
 $orange: #FFB40D;
-$orange-light-10: #FFC23C;
+
+/* $orange-light-10: #FFC23C;
 $orange-light-20: #FFD16C;
 $orange-dark-10: #FFB000;
 $orange-dark-20: #FDAE00;
@@ -16,6 +20,10 @@ $orange-dark-20: #FDAE00;
 $red: #FF240D;
 $red-light-10: #FF4E3C;
 $red-light-20: #FF7A6C;
+ */
+
+$green: #11EDA4;
+
 
 /*Font stack*/
 /* Fonts */
@@ -24,5 +32,36 @@ $red-light-20: #FF7A6C;
 	src: url("../../fonts/Lato/Lato-Regular.ttf")
 }
 
-$base-serif: 'Playfair Display', serif;
-$base-sans-serif: 'Lato-regular';
+@font-face {
+	font-family: "Lato-light";
+	src: url("../../fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+	font-family: "Lato-bold";
+	src: url("../../fonts/Lato/Lato-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Lato-black";
+	src: url("../../fonts/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+	font-family: "Libre_Caslon_Text Bold";
+	src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf")
+}
+
+@font-face {
+	font-family: "Libre_Caslon_Text Reg";
+	src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf");
+}
+
+$base-serif: "Libre_Caslon_Text Reg";
+$base-serif-bold: "Libre_Caslon_Text Bold";
+
+$base-sans: 'Lato-regular';
+$base-sans-light: 'Lato-light';
+$base-sans-bold: "Lato-bold";
+$base-sans-black: "Lato-black";
+

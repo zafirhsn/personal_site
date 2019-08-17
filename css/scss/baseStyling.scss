@@ -11,9 +11,8 @@
 
 /*Document styling*/
 html, body {
-	height: 100%;
-/*	position: relative;*/
-/*	background-color: #69DBF0;*/
+	height: 100vh;
+	width: 100vw;
 }
 
 .body-container {
@@ -32,15 +31,16 @@ html, body {
 
 /*Nav stylings*/
 .nav-stylings {
-	// background-color: $base-dark-20;
+	background-color: $base-dark-20;
 	// opacity: 0.9;
 	text-align: center;
-	padding: 0;
+	padding: 20px;
+	padding-left: 15px;
 }
 
 .navbar-toggler {
 	border: none;
-	color: #fff;
+	color: $base-light;
 	margin-left: -5px;
 	
 	padding-top: 10px;
@@ -54,25 +54,19 @@ html, body {
 
 .nav-link {
 	text-align: center;
-	font-family: $base-sans-serif;
-	color: #fff;
-	margin-left: 5px;
-	font-size: 20px;
-	border-radius: 0px;
-	
-	margin: 0;
+
+	font-family: $base-sans;
+	border-radius: 4px;
+	color: #000000;
+	margin-left: 30px;
+	font-size: 22px;
+	width: 163px;
+	height: 59px;
 	padding-top: 10px;
-	padding-bottom: 10px;
-	
-	-webkit-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out; 
-	-moz-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-	-o-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-	-ms-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-	transition: background-color 0.25s ease, border-radius 0.25s ease;
 	
 	&:hover {
-		color: #fff;
-		background-color: $base-color;
+		color: #000000;
+		background-color: $orange;
 		
 		/*
 		border-color:#11C8ED;
@@ -86,8 +80,8 @@ html, body {
 }
 
 .active {
-	color: #fff;
-	background-color: $base-color;
+	color: #000000;
+	background-color: $orange;
 }
 
 /*Footer styling*/
@@ -114,7 +108,7 @@ footer {
 }
 
 .footer-link {
-	font-family: $base-sans-serif;
+	font-family: $base-sans;
 	color: #FFF;
 }
 
@@ -127,7 +121,7 @@ footer {
 .footer-text {
 	font-size: 12px;
 	color: #FFF;
-	font-family: $base-sans-serif;
+	font-family: $base-sans;
 }
 
 .logo-img {

@@ -1,19 +1,47 @@
 /* CSS Document */
 /* Scss Document */
 /*Color variables*/
+/* $orange-light-10: #FFC23C;
+$orange-light-20: #FFD16C;
+$orange-dark-10: #FFB000;
+$orange-dark-20: #FDAE00;
+
+$red: #FF240D;
+$red-light-10: #FF4E3C;
+$red-light-20: #FF7A6C;
+ */
 /*Font stack*/
 /* Fonts */
 @font-face {
   font-family: "Lato-regular";
   src: url("../../fonts/Lato/Lato-Regular.ttf");
 }
+@font-face {
+  font-family: "Lato-light";
+  src: url("../../fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+  font-family: "Lato-bold";
+  src: url("../../fonts/Lato/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "Lato-black";
+  src: url("../../fonts/Lato/Lato-Black.ttf");
+}
+@font-face {
+  font-family: "Libre_Caslon_Text Bold";
+  src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf");
+}
+@font-face {
+  font-family: "Libre_Caslon_Text Reg";
+  src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf");
+}
 /*Animation mixins*/
 /*Base stylings for all pages*/
 /*Document styling*/
 html, body {
-  height: 100%;
-  /*	position: relative;*/
-  /*	background-color: #69DBF0;*/
+  height: 100vh;
+  width: 100vw;
 }
 
 .body-container {
@@ -37,40 +65,37 @@ html, body {
 
 /*Nav stylings*/
 .nav-stylings {
+  background-color: #01849C;
   text-align: center;
-  padding: 0;
+  padding: 20px;
+  padding-left: 15px;
 }
 
 .navbar-toggler {
   border: none;
-  color: #fff;
+  color: #6BFBFF;
   margin-left: -5px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .navbar-toggler:hover {
-  color: #0D9DBA;
+  color: #11C8ED;
 }
 
 .nav-link {
   text-align: center;
   font-family: "Lato-regular";
-  color: #fff;
-  margin-left: 5px;
-  font-size: 20px;
-  border-radius: 0px;
-  margin: 0;
+  border-radius: 4px;
+  color: #000000;
+  margin-left: 30px;
+  font-size: 22px;
+  width: 163px;
+  height: 59px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  -webkit-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-  -moz-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-  -o-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-  -ms-transition: background-color 0.25s ease-out, border-radius 0.25s ease-out;
-  transition: background-color 0.25s ease, border-radius 0.25s ease;
 }
 .nav-link:hover {
-  color: #fff;
-  background-color: #0D9DBA;
+  color: #000000;
+  background-color: #FFB40D;
   /*
   border-color:#11C8ED;
   border-width: 1px;
@@ -80,8 +105,8 @@ html, body {
 }
 
 .active {
-  color: #fff;
-  background-color: #0D9DBA;
+  color: #000000;
+  background-color: #FFB40D;
 }
 
 /*Footer styling*/

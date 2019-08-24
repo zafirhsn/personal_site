@@ -1,11 +1,36 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import 'variables';
+
 body {
 	background: linear-gradient(180deg, #FEFEFE 67.19%, #CFF3FB 80.21%, rgba(17, 200, 237, 0.4) 100%);
 }
 
-.container-body {
-	height: 50%;
+nav {
+	background-color: $base-dark-20;
 }
+
+
+li {
+
+}
+
+li > a {
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+	font-size: 18px !important;
+}
+
+.sidenav {
+	background-color: #0097BA;
+}
+
+// li { 
+// 	margin
+// }
+
+// .container-body {
+// 	height: 50%;
+// }
 

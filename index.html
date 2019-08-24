@@ -11,23 +11,24 @@
 		gtag('config', 'UA-129309453-1');
 	</script>
 
-		<title>Zafir Hasan | Front-end/UI Developer</title>
+		<title>Zafir Hasan | Developer</title>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="Keywords" content="resume,Zafir Hasan,Zafir,Developer,Designer,Front-End Developer,UI,NYU,New York,portfolio">
+		<meta name="Keywords" content="resume,Zafir Hasan,Zafir,Developer,Designer,Front-End Developer,UI,Back-end Developer,Dev,Web,Apps,NYU,New York,portfolio,software,engineer">
 		<meta name="author" content="=Zafir Hasan">
-		<meta name="description" content="Online portfolio for New York based front-end developer Zafir Hasan">
+		<meta name="description" content="Online portfolio for New York based developer Zafir Hasan">
 		<!-- Allows googles web crawler (Googlebot) to find and index my site, this is the default value, but I want to be able to see it-->
 		<meta name="robots" content="index">
 		<meta name="theme-color" content="#11C8ED"/>
 		<!--Web App Manifest-->
 		<link rel="manifest" href="/manifest.webmanifest">
 		
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Materialize CSS -->
+		<link type="text/css" rel="stylesheet" href="./css/materialize.min.css">
 
-		<!-- StyleSheet for font from Google Fonts  -->
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		
 		<!-- Stylesheet for font Awesome -->
 		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -47,47 +48,41 @@
 	</head>
 
 
-	<body>
-		<nav class="navbar navbar-expand-sm nav-stylings fixed-top">
-			<a href="#" class="navbar-toggler"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span><i class="fas fa-bars fa-2x fa-fw"></i></span></a>
-<!--	  </button>-->
-		
-<!--	  <a class="navbar-brand" href="#">Brand</a>-->
-		
+	<body>	
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="left hide-on-small-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
 
+		<ul class="sidenav" id="mobile-demo">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href=""><i class="fab fa-linkedin fa-3x"></i></a></li>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<div class="navbar-nav">
-			<a class="nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-			<a class="nav-link" href="projects.html">Projects</a>
-			<a class="nav-link" href="resume.html">Resume</a>
-			<a class="nav-link" href="contact.html">Contact</a>
-		</div>	  
-		</div>
-		
-	</nav>
-	
-	<div class="container">
-	
-	</div>
-	
-	
+		</ul>
+						
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/materialize.min.js"></script>
 		
-		<script>
-			//Script, should I need one
-			$(document).ready(function() {
-
-				
-			});
-		</script>
-		
+	<script>
+		//Script, should I need one
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+		});
+	</script>
+	
 	
 	</body>
 

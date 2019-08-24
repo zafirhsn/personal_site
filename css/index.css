@@ -1,10 +1,1 @@
-/* CSS Document */
-body {
-  background: linear-gradient(180deg, #FEFEFE 67.19%, #CFF3FB 80.21%, rgba(17, 200, 237, 0.4) 100%);
-}
-
-.container-body {
-  height: 50%;
-}
-
-/*# sourceMappingURL=index.css.map */
+@font-face{font-family:"Lato-regular";src:url("../../fonts/Lato/Lato-Regular.ttf")}@font-face{font-family:"Lato-light";src:url("../../fonts/Lato/Lato-Light.ttf")}@font-face{font-family:"Lato-bold";src:url("../../fonts/Lato/Lato-Bold.ttf")}@font-face{font-family:"Lato-black";src:url("../../fonts/Lato/Lato-Black.ttf")}@font-face{font-family:"Libre_Caslon_Text Bold";src:url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf")}@font-face{font-family:"Libre_Caslon_Text Reg";src:url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf")}body{background:linear-gradient(180deg, #FEFEFE 67.19%, #CFF3FB 80.21%, rgba(17, 200, 237, 0.4) 100%)}nav{background-color:#01849c}li>a{padding-left:30px !important;padding-right:30px !important;font-size:18px !important}.sidenav{background-color:#0097ba}/*# sourceMappingURL=index.css.map */

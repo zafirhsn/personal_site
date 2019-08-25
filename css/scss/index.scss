@@ -8,22 +8,35 @@ body {
 }
 
 nav {
+	font-family: $base-sans-light;
 	background-color: $base-dark-20;
 }
 
 
-li {
-
-}
-
 li > a {
 	padding-left: 30px !important;
 	padding-right: 30px !important;
-	font-size: 18px !important;
+	font-size: 20px !important;
+
 }
 
 .sidenav {
+	font-family: $base-sans;
 	background-color: #0097BA;
+}
+
+.sidenav li {
+	// margin-top: 10px;
+}
+
+
+.sidenav li > a {
+	height: 120% !important;
+	background-color: $base-color;
+
+	&:hover {
+		background-color: $base-light;
+	}
 }
 
 // li { 

@@ -2,10 +2,7 @@
 /* CSS Document */
 
 @import 'variables';
-
-
 /*Animation mixins*/
-
 
 /*Base stylings for all pages*/
 
@@ -15,74 +12,24 @@ html, body {
 	width: 100vw;
 }
 
-.body-container {
-	margin-top: 25%;
-	@media screen and (min-width: 576px) {
-		margin-top: 15%;
-	}
-	@media screen and (min-width: 768px) {
-		margin-top: 10%;
-	}
-	@media screen and (min-width: 1200px) {
-		margin-top: 7%;
-	}
-	
+.heading-text {
+	font-family: $base-serif-bold;
+	font-size: 54px;
 }
 
-/*Nav stylings*/
-.nav-stylings {
-	background-color: $base-dark-20;
-	// opacity: 0.9;
-	text-align: center;
-	padding: 20px;
-	padding-left: 15px;
-}
+.info-text {
+	font-family: $base-sans-light;
+	font-size: 18px;
 
-.navbar-toggler {
-	border: none;
-	color: $base-light;
-	margin-left: -5px;
-	
-	padding-top: 10px;
-	padding-bottom: 10px;
-	
-	&:hover {
-		color: $base-color;
+	@media screen and (min-width: $small) {
+		font-size: 14px;
+	} 
+	@media screen and (min-width: $med) {
+		font-size: 16px;
 	}
 }
 
 
-.nav-link {
-	text-align: center;
-
-	font-family: $base-sans;
-	border-radius: 4px;
-	color: #000000;
-	margin-left: 30px;
-	font-size: 22px;
-	width: 163px;
-	height: 59px;
-	padding-top: 10px;
-	
-	&:hover {
-		color: #000000;
-		background-color: $orange;
-		
-		/*
-		border-color:#11C8ED;
-		border-width: 1px;
-		border-style: solid;
-		*/
-		//	border-radius: 10px;
-		/*	margin-right: -2px; To keep the links from shifting after adding the border*/
-	}
-
-}
-
-.active {
-	color: #000000;
-	background-color: $orange;
-}
 
 /*Footer styling*/
 
@@ -90,7 +37,6 @@ html, body {
 	.bottom-row {
 		margin-left: -70px;
 	}
-	
 }
 
 footer {
@@ -133,6 +79,7 @@ footer {
 .logo-img:hover {
 	color: black;
 }
+
 
 
 

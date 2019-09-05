@@ -5,6 +5,7 @@
 
 body {
 	background: linear-gradient(180deg, #FEFEFE 67.19%, #CFF3FB 80.21%, rgba(17, 200, 237, 0.4) 100%);
+	background-size: cover;
 }
 
 nav {
@@ -39,11 +40,123 @@ li > a {
 	}
 }
 
-// li { 
-// 	margin
-// }
+.btn-row {
+	margin-top: 40px;
+}
 
-// .container-body {
-// 	height: 50%;
-// }
+.tech-row {
+	margin-top: 100px;
+}
 
+.tech-col {
+	height: 150px;
+	margin-bottom: 20px;
+}
+
+.tech-text {
+	font-family: $base-sans-bold;
+
+	@media screen and (min-width: $small){
+		font-size: 14px;
+	}
+	@media screen and (min-width: $med){
+		font-size: 16px;
+	}
+	@media screen and (min-width: $large) {
+		font-size: 16px;
+	}
+	@media screen and (min-width: $xlarge) {
+		font-size: 18px; 
+	}
+}
+
+.tech-img {
+	width: 30%;
+	height: auto;
+
+	@media screen and (min-width: $small){
+		width: 25%;
+	}
+	@media screen and (min-width: $med){
+		width: 20%;
+	}
+	@media screen and (min-width: $large) {
+		width: 30%;
+	}
+}
+
+.pro-img {
+	margin-bottom: 40px;
+	width: 40%;
+	height: auto;
+	border-color: #000;
+	border-width: 1px;
+	border-style: solid;
+
+	@media screen and (min-width: $small){
+		width: 70%;
+	}
+	@media screen and (min-width: $med){
+		width: 50%;
+	}
+	@media screen and (min-width: $large){
+		width: 45%;
+	}
+	@media screen and (min-width: $xlarge){
+		width: 35%;
+	}
+}
+.pic-row {
+	margin-top: 50px;
+}
+
+.heading-text {
+	width: 100%;
+	margin: 0px;
+	font-family: $base-serif-bold;
+	font-size: 54px;
+
+	@media screen and (min-width: $small){
+		font-size: 32px;
+		text-align: center;
+	}
+	@media screen and (min-width: $med){
+		font-size: 40px;
+		text-align: center;
+	}
+	@media screen and (min-width: $large){
+		font-size: 46px;
+
+	}
+	@media screen and (min-width: $xlarge){
+		font-size: 54px;
+	}
+}
+
+.info-text {
+	font-family: $base-sans-light;
+	font-size: 18px;
+
+	@media screen and (min-width: $small) {
+		font-size: 14px;
+	} 
+	@media screen and (min-width: $med) {
+		font-size: 16px;
+	}
+	@media screen and (min-width: $large) {
+		font-size: 16px;
+	}
+	@media screen and (min-width: $xlarge) {
+		font-size: 20px;
+	}
+}
+
+.btn, .btn-large {
+	background-color: #FFB40D;
+	color: #000;
+	font-family: $base-sans-bold;
+
+	&:hover {
+		background-color: #FFB40D;
+	}
+}

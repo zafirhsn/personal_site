@@ -32,6 +32,9 @@
 		
 		<!-- Stylesheet for font Awesome -->
 		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+		<!-- Scroll animation library -->
+		<link href="./css/aos.css" rel="stylesheet">
 		
 		<!--Page style sheet-->
 		<link href="css/baseStyling.css" rel="stylesheet" type="text/css">
@@ -92,47 +95,48 @@
 			</div>
 
 			<div class="row tech-row center-align">
-					<div class="col s6 l3 tech-col">
+					<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700">
 							<img class="tech-img" src="./imgs/js.png">
 							<p class="tech-text">JavaScript</p>
 					</div>
-					<div class="col s6 l3 tech-col">
+					<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700">
 							<img class="tech-img " src="./imgs/css.png">
 							<p class="tech-text">CSS</p>
 					</div>
-					<div class="col s6 l3 tech-col">
+					<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700">
 							<img class="tech-img" src="./imgs/vue.png">
 							<p class="tech-text">Vue.js</p>
 					</div>
-					<div class="col s6 l3 tech-col">
+					<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700"> 
 							<img class="tech-img" src="./imgs/mongo.png">
 							<p class="tech-text">MongoDB</p>
 					</div>
-					<div class="col s6 l3 tech-col">
+					<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700">
 							<img class="tech-img" src="./imgs/html.png">
 							<p class="tech-text">HTML5</p>
 					</div>
-					<div class="col s6 l3 tech-col">
+					<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700">
 							<img class="tech-img" src="./imgs/node.png">
 							<p class="tech-text">Node.js</p>
 					</div>
-					<div class="col s6 l3 tech-col">
+					<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700">
 							<img class="tech-img" src="./imgs/c++.png">
 							<p class="tech-text">C++</p>
 					</div>
-					<div class="col s6 l3 tech-col">
+					<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700">
 							<img class="tech-img" src="./imgs/sass.png">
 							<p class="tech-text">SASS</p>
 					</div>
 			</div>
 		</div>
 	
-	
+	<script type="text/javascript" src="./js/aos.js"></script>
 	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="./js/materialize.min.js"></script>
 		
 	<script>
 		$(document).ready(function(){
+			AOS.init();
 			$('.sidenav').sidenav();
 		});
 	</script>

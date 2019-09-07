@@ -8,17 +8,10 @@ body {
 	background-size: cover;
 }
 
+/* NAV STYLINGS */
 nav {
 	font-family: $base-sans-light;
 	background-color: $base-dark-20;
-}
-
-
-li > a {
-	padding-left: 30px !important;
-	padding-right: 30px !important;
-	font-size: 20px !important;
-
 }
 
 .sidenav {
@@ -27,64 +20,46 @@ li > a {
 }
 
 .sidenav li {
-	// margin-top: 10px;
+	height: 65px;
 }
 
-
 .sidenav li > a {
-	height: 120% !important;
+	height: 100%;
+	padding-top: 10px;
 	background-color: $base-color;
+	font-family: $base-sans-bold;
+	font-size: 16px;
 
 	&:hover {
 		background-color: $base-light;
 	}
-}
 
-.btn-row {
-	margin-top: 40px;
-}
-
-.tech-row {
-	margin-top: 100px;
-}
-
-.tech-col {
-	height: 150px;
-	margin-bottom: 20px;
-}
-
-.tech-text {
-	font-family: $base-sans-bold;
-
-	@media screen and (min-width: $small){
-		font-size: 14px;
+	@media screen and (min-width: $med) {
+		font-size: 18px;
 	}
-	@media screen and (min-width: $med){
-		font-size: 16px;
-	}
+
 	@media screen and (min-width: $large) {
-		font-size: 16px;
-	}
-	@media screen and (min-width: $xlarge) {
-		font-size: 18px; 
+		font-size: 22px;
 	}
 }
 
-.tech-img {
-	width: 30%;
-	height: auto;
-
-	@media screen and (min-width: $small){
-		width: 25%;
-	}
-	@media screen and (min-width: $med){
-		width: 20%;
-	}
-	@media screen and (min-width: $large) {
-		width: 30%;
-	}
+.sidenav li.social-li {
+	margin-top: 20px;
 }
 
+.sidenav li.social-li > a {
+	display: inline-block;
+	padding: 0px;
+	background-color: #0097BA;
+	width: 25%;
+	margin: 0px;
+}
+
+/* INDEX SECTION */
+/* PROFILE PIC AND BIOGRAPHY */
+.pic-row {
+	margin-top: 50px;
+}
 .pro-img {
 	margin-bottom: 40px;
 	width: 40%;
@@ -106,10 +81,6 @@ li > a {
 		width: 30%;
 	}
 }
-.pic-row {
-	margin-top: 50px;
-}
-
 .heading-text {
 	width: 100%;
 	margin: 0px;
@@ -150,8 +121,10 @@ li > a {
 		font-size: 20px;
 	}
 }
-
-.btn, .btn-large {
+.btn-row {
+	margin-top: 40px;
+}
+div > .btn, div > .btn-large {
 	background-color: #FFB40D;
 	color: #000;
 	font-family: $base-sans-bold;
@@ -159,4 +132,221 @@ li > a {
 	&:hover {
 		background-color: #FFB40D;
 	}
+}
+
+/* TECH ICONS STYLINGS */
+.tech-row {
+	margin-top: 100px;
+}
+.tech-col {
+	height: 150px;
+	margin-bottom: 20px;
+}
+.tech-text {
+	font-family: $base-sans-bold;
+
+	@media screen and (min-width: $small){
+		font-size: 14px;
+	}
+	@media screen and (min-width: $med){
+		font-size: 16px;
+	}
+	@media screen and (min-width: $large) {
+		font-size: 16px;
+	}
+	@media screen and (min-width: $xlarge) {
+		font-size: 18px; 
+	}
+}
+.tech-img {
+	width: 30%;
+	height: auto;
+
+	@media screen and (min-width: $small){
+		width: 25%;
+	}
+	@media screen and (min-width: $med){
+		width: 20%;
+	}
+	@media screen and (min-width: $large) {
+		width: 30%;
+	}
+}
+
+
+
+/* PROJECTS SECTION */
+.project-heading {
+	font-family: $base-sans-bold;
+	@media screen and (min-width: $small) {
+		font-size: 28px;
+	} 
+	@media screen and (min-width: $med) {
+		font-size: 40px;
+	}
+	@media screen and (min-width: $large) {
+		font-size: 50px;
+	}
+	@media screen and (min-width: $xlarge) {
+		font-size: 60px;
+	}
+}
+.project-info {
+	font-family: $base-sans-light;
+
+	@media screen and (min-width: $small) {
+		font-size: 14px;
+	} 
+	@media screen and (min-width: $med) {
+		font-size: 16px;
+	}
+	@media screen and (min-width: $large) {
+		font-size: 16px;
+	}
+	@media screen and (min-width: $xlarge) {
+		font-size: 20px;
+	}
+}
+
+.row .col-link {
+	width: auto;
+
+}
+
+.btn-small {
+	background-color: $base-color;
+	opacity: 0.71;
+	color: #000;
+	border-radius: 20px;
+
+	&:hover {
+		opacity: 1;
+		background-color: $base-color;
+	}
+}
+
+.btn-git, .btn-live {
+	@extend .btn-small;
+}
+
+.btn-live {
+	background-color: #11EDA4;
+	opacity: 0.71;
+
+	&:hover {
+		opacity: 1;
+		background-color: #11EDA4;
+	}
+}
+
+a > .fa-github, a > .fa-link {
+	margin-right: 5px;
+}
+
+
+@mixin fade() {
+	-webkit-transition: color 0.15s ease-out; 
+	-moz-transition: color 0.15s ease-out;
+	-o-transition: color 0.15s ease-out;
+	-ms-transition: color 0.15s ease-out;
+	transition: color 0.15s ease-out;
+}
+@mixin filter-fade {
+	-webkit-transition: filter 0.15s ease-out; 
+	-moz-transition: filter 0.15s ease-out;
+	-o-transition: filter 0.15s ease-out;
+	-ms-transition: filter 0.15s ease-out;
+	transition: filter 0.15s ease-out;
+}
+
+%tech-icon {
+	@include fade();
+	color: #7B7B7B;
+}
+
+.js-icon {
+	@extend %tech-icon;
+	
+	&:hover {
+		color: #f3da34;
+	}
+}
+
+.css-icon {
+	@extend %tech-icon;
+	
+	&:hover {
+		color: #1391dd;
+	}
+}
+
+.html-icon {
+	@extend %tech-icon;
+	
+	&:hover {
+		color: #ee5b30;
+	}
+}
+
+.python-icon {
+	@extend %tech-icon;
+	
+	&:hover {
+		color: #fed04c; 
+	}
+}
+
+.nodejs-icon {
+	@extend %tech-icon;
+
+	&:hover {
+		color: #026e00;
+	}
+}
+
+.p5-icon {
+	@extend %tech-icon;
+	@include filter-fade();
+
+	filter: grayscale(100%);
+
+	display: inline-block;
+	height: 20px;
+	width: 45px;
+	margin-left: 7px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../../imgs/p5-logo.png");	
+
+	&:hover {
+		filter: grayscale(0%);
+	}
+}
+
+.c-icon {
+	@extend %tech-icon;
+	@extend .p5-icon;
+	height: 35px;
+	width: 35px;
+	background-image: url("../../imgs/c_logo.png");	
+}
+.express-icon {
+	@extend %tech-icon;
+	display: inline-block;
+	height: 15px;
+	width: 70px;
+	margin-left: 7px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../../imgs/express-logo.png");	
+}
+
+.mysql-icon {
+	@extend .p5-icon;
+	position: relative;
+	top: 20px;
+	height: 70px;
+	width: 70px;
+	margin-left: 7px;
+	background-image: url("../../imgs/mysql.png");
 }

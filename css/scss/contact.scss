@@ -2,22 +2,22 @@
 
 @import 'variables';
 
-body {
-	font-family: $base-serif;
+/* CONTACT SECTION */
+// input, textarea {
+// 	border-width: 2px !important;
+// 	border-right: none !important;
+// 	border-color: $base-color !important;
+
+// }
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+	color:$base-color;
+	
 }
 
-#name, #message, #email, #project {
-	// width: 80%;
-	font-family: $base-serif;
-}
-
-button {
-	color: white;
-	background-color: $base-color;
-
-	&:hover {
-		background-color: $base-dark-20;
-	}
+.input-field .prefix.active {
+	color: $base-color;
+	
 }
 
 footer {

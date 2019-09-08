@@ -3,62 +3,18 @@
 
 @import 'variables';
 
-body {
+.index-wrapper {
+	height: auto;
+	width: 100%;
 	background: linear-gradient(180deg, #FEFEFE 67.19%, #CFF3FB 80.21%, rgba(17, 200, 237, 0.4) 100%);
 	background-size: cover;
 }
 
-/* NAV STYLINGS */
-nav {
-	font-family: $base-sans-light;
-	background-color: $base-dark-20;
-}
-
-.sidenav {
-	font-family: $base-sans;
-	background-color: #0097BA;
-}
-
-.sidenav li {
-	height: 65px;
-}
-
-.sidenav li > a {
-	height: 100%;
-	padding-top: 10px;
-	background-color: $base-color;
-	font-family: $base-sans-bold;
-	font-size: 16px;
-
-	&:hover {
-		background-color: $base-light;
-	}
-
-	@media screen and (min-width: $med) {
-		font-size: 18px;
-	}
-
-	@media screen and (min-width: $large) {
-		font-size: 22px;
-	}
-}
-
-.sidenav li.social-li {
-	margin-top: 20px;
-}
-
-.sidenav li.social-li > a {
-	display: inline-block;
-	padding: 0px;
-	background-color: #0097BA;
-	width: 25%;
-	margin: 0px;
-}
 
 /* INDEX SECTION */
 /* PROFILE PIC AND BIOGRAPHY */
 .pic-row {
-	margin-top: 50px;
+	margin-top: 85px;
 }
 .pro-img {
 	margin-bottom: 40px;
@@ -88,19 +44,19 @@ nav {
 	font-size: 54px;
 
 	@media screen and (min-width: $small){
-		font-size: 32px;
+		font-size: 36px;
 		text-align: center;
 	}
 	@media screen and (min-width: $med){
-		font-size: 40px;
+		font-size: 46px;
 		text-align: center;
 	}
 	@media screen and (min-width: $large){
-		font-size: 46px;
+		font-size: 50px;
 
 	}
 	@media screen and (min-width: $xlarge){
-		font-size: 54px;
+		font-size: 58px;
 	}
 }
 
@@ -115,7 +71,7 @@ nav {
 		font-size: 16px;
 	}
 	@media screen and (min-width: $large) {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	@media screen and (min-width: $xlarge) {
 		font-size: 20px;
@@ -123,15 +79,6 @@ nav {
 }
 .btn-row {
 	margin-top: 40px;
-}
-div > .btn, div > .btn-large {
-	background-color: #FFB40D;
-	color: #000;
-	font-family: $base-sans-bold;
-
-	&:hover {
-		background-color: #FFB40D;
-	}
 }
 
 /* TECH ICONS STYLINGS */
@@ -177,18 +124,18 @@ div > .btn, div > .btn-large {
 
 /* PROJECTS SECTION */
 .project-heading {
-	font-family: $base-sans-bold;
+	font-family: $base-sans;
 	@media screen and (min-width: $small) {
 		font-size: 28px;
 	} 
 	@media screen and (min-width: $med) {
-		font-size: 40px;
+		font-size: 36px;
 	}
 	@media screen and (min-width: $large) {
-		font-size: 50px;
+		font-size: 46px;
 	}
 	@media screen and (min-width: $xlarge) {
-		font-size: 60px;
+		font-size: 50px;
 	}
 }
 .project-info {
@@ -201,7 +148,7 @@ div > .btn, div > .btn-large {
 		font-size: 16px;
 	}
 	@media screen and (min-width: $large) {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	@media screen and (min-width: $xlarge) {
 		font-size: 20px;
@@ -239,7 +186,7 @@ div > .btn, div > .btn-large {
 	}
 }
 
-a > .fa-github, a > .fa-link {
+a > .fa-github, a > .fa-link, a > .fa-file {
 	margin-right: 5px;
 }
 
@@ -343,10 +290,11 @@ a > .fa-github, a > .fa-link {
 
 .mysql-icon {
 	@extend .p5-icon;
-	position: relative;
 	top: 20px;
-	height: 70px;
-	width: 70px;
+	height: 40px;
+	width: 40px;
 	margin-left: 7px;
 	background-image: url("../../imgs/mysql.png");
 }
+
+

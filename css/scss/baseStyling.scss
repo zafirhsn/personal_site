@@ -8,18 +8,120 @@
 
 /*Document styling*/
 html, body {
-	height: 100vh;
-	width: 100vw;
+
 }
 
-/*Footer styling*/
+/* GENERAL */
+.section-row {
+	margin-top: 75px;
+}
+.section-title {
+	width: 100%;
+	margin: 0px;
+	font-family: $base-serif-bold;
+	font-size: 54px;
+	text-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
 
-@media screen and (min-width: 540px) {
-	.bottom-row {
-		margin-left: -70px;
+	@media screen and (min-width: $small){
+		font-size: 28px;
+		text-align: center;
+	}
+	@media screen and (min-width: $med){
+		font-size: 36px;
+		text-align: center;
+	}
+	@media screen and (min-width: $large){
+		font-size: 46px;
+	}
+	@media screen and (min-width: $xlarge){
+		font-size: 50px;
+	}
+}
+div > .btn, div > .btn-large {
+	background-color: rgba(255, 178, 13, 0.8);
+	color: #000;
+	font-family: $base-sans-bold;
+
+	&:hover {
+		opacity: 1;
+		background-color: #FFB40D;
+	}
+
+	&:focus {
+		opacity: 1;
+		background-color: #FFB40D;
 	}
 }
 
+/* NAV STYLINGS */
+nav {
+	top: 0;
+	z-index: 5;
+	font-family: $base-sans-light;
+	background-color: $base-dark-20;
+	position: fixed;
+	transition: top 0.3s;
+}
+
+.sidenav {
+	font-family: $base-sans;
+	background-color: #0097BA;
+}
+
+.sidenav li {
+	height: 65px;
+}
+
+#nav-mobile > li > a {
+		@media screen and (min-width: $small){
+		font-size: 28px;
+		text-align: center;
+	}
+	@media screen and (min-width: $med){
+		font-size: 18px;
+		text-align: center;
+	}
+	@media screen and (min-width: $large){
+		font-size: 20px;
+	}
+	@media screen and (min-width: $xlarge){
+		font-size: 22px;
+	}
+}
+
+.sidenav li > a {
+	height: 100%;
+	padding-top: 10px;
+	background-color: $base-color;
+	font-family: $base-sans;
+	font-size: 16px;
+
+	&:hover {
+		background-color: $base-light;
+	}
+
+	@media screen and (min-width: $med) {
+		font-size: 18px;
+	}
+
+	@media screen and (min-width: $large) {
+		font-size: 22px;
+	}
+}
+
+.sidenav li.social-li {
+	margin-top: 20px;
+}
+
+.sidenav li.social-li > a {
+	display: inline-block;
+	padding: 0px;
+	background-color: #0097BA;
+	width: 25%;
+	margin: 0px;
+}
+
+/*Footer styling*/
 footer {
 	position: relative;
 	bottom: 0;
@@ -39,12 +141,6 @@ footer {
 	color: #FFF;
 }
 
-.footer-link:hover {
-	text-decoration: none;
-	color: #000;
-	
-}
-
 .footer-text {
 	font-size: 12px;
 	color: #FFF;
@@ -53,13 +149,10 @@ footer {
 
 .logo-img {
 	color: white;
-	height: 30px;
-	width: 30px;
 }
 
-.logo-img:hover {
-	color: black;
-}
+
+
 
 
 

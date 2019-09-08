@@ -15,30 +15,30 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="Keywords" content="resume,Zafir Hasan,Zafir,Developer,Designer,Front-End Developer,UI,NYU,New York,portfolio">
+	<meta name="Keywords" content="resume,Zafir Hasan,Zafir,Developer,Designer,Front-End Developer,UI,Back-end Developer,Dev,Web,Apps,NYU,New York,portfolio,software,engineer">
 	<meta name="author" content="=Zafir Hasan">
-	<meta name="description" content="Online portfolio for New York based front-end developer Zafir Hasan">
+	<meta name="description" content="Online portfolio for New York based developer Zafir Hasan">
 	<!-- Allows googles web crawler (Googlebot) to find and index my site, this is the default value, but I want to be able to see it-->
 	<meta name="robots" content="index">
-	<meta name="theme-color" content="#11C8ED">
+	<meta name="theme-color" content="#01849C"/>
 	<!--Web App Manifest-->
-	<link rel="manifest" href="/manifest.webmanifest">		
-		
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="manifest" href="/manifest.webmanifest">
 
-	<!-- StyleSheet for font from Google Fonts  -->
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Montserrat:300" rel="stylesheet">
-<!--	<link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:700" rel="stylesheet">-->
+	<!-- Materialize CSS -->
+	<link type="text/css" rel="stylesheet" href="./css/materialize.min.css">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Stylesheet for font Awesome -->
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	
-	<!-- Base style sheet -->
-	<link href="css/baseStyling.css" rel="stylesheet" type="text/css">
+	<link href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" rel="stylesheet">
+
+	<!-- Scroll animation library -->
+	<link href="./css/aos.css" rel="stylesheet">
 
 	<!--Page style sheet-->
-	 <link href="css/resume.css" rel="stylesheet" type="text/css"> 
+	<link href="css/baseStyling.css" rel="stylesheet" type="text/css">
+	<link href="css/resume.css" rel="stylesheet" type="text/css">
 
 	<!-- Favicon  -->
 	<link rel="icon" type="image/png" href="#">
@@ -52,117 +52,113 @@
 </head>
 
 <body>
-
-<!--	<div class="body-container"> -->
-
-	<nav class="navbar navbar-expand-sm nav-stylings fixed-top">
-  	  <a href="#" class="navbar-toggler"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span><i class="fas fa-bars fa-2x fa-fw"></i></span></a>
-<!--	  </button>-->
-	  
-<!--	  <a class="navbar-brand" href="#">Brand</a>-->
-	  
-
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	  	<div class="navbar-nav">
-			<a class="nav-link" href="http://www.zafirhasan.com">Home</a>
-			<a class="nav-link" href="http://www.zafirhasan.com/about.html">About</a>
-			<a class="nav-link" href="http://zafirhasan.com/projects.html">Projects</a>
-			<a class="nav-link active" href="#">Resume<span class="sr-only">(current)</span></a>
-			<a class="nav-link" href="http://www.zafirhasan.com/contact.html">Contact</a>
-		</div>	  
-	  </div>
-	  
+	<nav id="navbar">
+			<div class="nav-wrapper">
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="left hide-on-small-and-down">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
 	</nav>
-	
-	<div class="container body-container">
-		<div class="row">
-			<div class="col download-col">
-				<site-button>
-				<a href="http://www.zafirhasan.com/Zafir_Hasan_Resume.pdf" class="live-link" download>Download</a>	
-				</site-button>
-			</div>	
-		</div>
 
-		<div class="row">
-			<div class="col">
-				<iframe src="http://docs.google.com/gview?url=http://www.zafirhasan.com/Zafir_Hasan_Resume.pdf&embedded=true" class="resume" frameborder="0"></iframe>		
+	<ul class="sidenav" id="mobile-demo">
+			<li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
+			<li><a href="projects.html">Projects<i class="fas fa-project-diagram"></i></a></li>
+			<li><a href="resume.html">Resume <i class="fas fa-file"></i></a></li>
+			<li><a href="contact.html">Contact <i class="fas fa-envelope-open-text"></i></a></li>
+			<li class="social-li center-align"><a href="" class=""><i class="fab fa-linkedin fa-2x"></i></a><a href="" class=""><i class="fab fa-github fa-2x"></i></a></li>
+	</ul>
+	
+	<!-- RESUME SECTION -->
+	<div class="container">
+		<div class="row section-row">
+			<div class="col s12">
+				<p class="section-title center-align">Resume</p>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col download-col">
-				<site-button>
-				<a href="http://www.zafirhasan.com/Zafir_Hasan_Resume.pdf" class="live-link" download>Download</a>	
-				</site-button>
-			</div>	
-		</div>
+			<div class="col s12">
+				<iframe src="http://docs.google.com/gview?url=http://www.zafirhasan.com/Zafir_Hasan_Resume.pdf&embedded=true" class="resume" frameborder="0"></iframe>		
+			</div>
+		</div>	
 		
+		<div class="row center-align">
+				<div class="col s12">
+					<a class="btn-large" href="http://www.zafirhasan.com/Zafir_Hasan_Resume.pdf" download>Download</a>	
+				</div>	
+		</div>
 	</div>
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./js/aos.js"></script>
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/materialize.min.js"></script>
 
 	<script>
-		$(document).ready(function() {
-			
-			
+		$(document).ready(function(){
+			AOS.init();
+			$('.sidenav').sidenav();
+			$('.tooltipped').tooltip();
+			$("#submit").click(function(event) {
+				event.preventDefault();
+			});
 		});
-			
-		
 
-
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("navbar").style.top = "0";
+			} else {
+				document.getElementById("navbar").style.top = "-65px";
+			}
+			prevScrollpos = currentScrollPos;
+		}
 	</script>
 
 
 	<footer>
 		<div class="container">
-			<div class="row justify-content-center py-2">
-				<div class = "col top-row"> 
+
+			<div class="row">
+				<div class = "col s6 m3 top-row"> 
 					<a href="index.html" class="footer-link">Home</a>
 				</div>
-				<div class="col top-row"> 
-					<a href="about.html" class="footer-link">About</a>
-				</div>
-				<div class="col top-row">
+				<div class="col s6 m3 top-row">
 					<a href="projects.html" class="footer-link">Projects</a>
 				</div>
-				<div class="col top-row">
+				<div class="col s6 m3 top-row">
 					<a href="resume.html" class="footer-link">Resume</a>
 				</div>
-				<div class="col top-row">
+				<div class="col s6 m3 top-row">
 					<a href="contact.html" class="footer-link">Contact</a>
 				</div>
 			</div>
 			
-			<div class="row justify-content-center py-2">
-				<div class="col-auto">
-					<a href="https://github.com/zafirhsn"><i class="fab fa-github fa-2x fa-fw logo-img"></i></a>
-					
+			<div class="row center-align">
+				<div class="col s6">
+					<a href="https://github.com/zafirhsn"><i class="fab fa-github fa-2x fa-fw logo-img"></i></a>			
 				</div>
-				<div class="col-auto">
+				<div class="col s6">
 					<a href="https://www.linkedin.com/in/zafir-hasan-875376144/"><i class="fab fa-linkedin fa-2x fa-fw logo-img"></i></a>
 				</div>
 			</div>
 			
-			<div class="row justify-content-center py-2 bottom-row">
-				<div class="col-auto">
-					<span class="footer-text">&copy; Copyright 2018. All rights reserved.</span>
+			<div class="row bottom-row">
+				<div class="col s6">
+					<span class="footer-text">&copy; Copyright 2019. All rights reserved.</span>
 				</div>
-				<div class="col-auto"> 
-					<a href="#" class="footer-link footer-text">Sitemap</a>
-				</div>
-				<div class="col-auto">
+				<div class="col s6">
 					<span class="footer-text">Contact me: zh754@nyu.edu</span>
 				</div>			
 			</div>
 			
-		</div>
-		
+		</div>	
 	</footer>
+
 </body>
 </html>

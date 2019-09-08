@@ -52,19 +52,20 @@
 
 
 	<body>	
-		<ul id="project-dropdown" class="dropdown-content">
+		<!-- <ul id="project-dropdown" class="dropdown-content">
 				<li><a href="#neuralnetwork">Neural Network</a></li>
 				<li class="divider"></li>
 				<li><a href="#!">two</a></li>
 				<li class="divider"></li>
 				<li><a href="#!">three</a></li>
-		</ul>
+		</ul> -->
+
 		<nav id="navbar">
 			<div class="nav-wrapper">
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="left hide-on-small-and-down">
-					<li><a href="index.html">Home</a></li>
-					<li><a class="dropdown-trigger" data-target="project-dropdown" href="#!">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
+					<li id="index-li" class="active"><a href="index.html">Home</a></li>
+					<li id="project-li"><a href="#projects">Projects</a></li>
 					<li><a href="resume.html">Resume</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -72,7 +73,7 @@
 		</nav>
 
 		<ul class="sidenav" id="mobile-demo">
-				<li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
+				<li class="active"><a href="index.html">Home <i class="fas fa-home"></i></a></li>
 				<li><a href="#projects">Projects<i class="fas fa-project-diagram"></i></a></li>
 				<li><a href="resume.html">Resume <i class="fas fa-file"></i></a></li>
 				<li><a href="contact.html">Contact <i class="fas fa-envelope-open-text"></i></a></li>
@@ -353,10 +354,10 @@
 				</div>
 				
 				<div class="row center-align">
-					<div class="col s6">
+					<div class="col-link">
 						<a href="https://github.com/zafirhsn"><i class="fab fa-github fa-2x fa-fw logo-img"></i></a>			
 					</div>
-					<div class="col s6">
+					<div class="col-link">
 						<a href="https://www.linkedin.com/in/zafir-hasan-875376144/"><i class="fab fa-linkedin fa-2x fa-fw logo-img"></i></a>
 					</div>
 				</div>
@@ -389,8 +390,11 @@
 			});
 		});
 
+
+
 		var prevScrollpos = window.pageYOffset;
 		window.onscroll = function() {
+			// console.log(window.pageYOffset)
 			var currentScrollPos = window.pageYOffset;
 			if (prevScrollpos > currentScrollPos) {
 				document.getElementById("navbar").style.top = "0";
@@ -398,6 +402,15 @@
 				document.getElementById("navbar").style.top = "-65px";
 			}
 			prevScrollpos = currentScrollPos;
+
+			if (currentScrollPos > 1700) {
+				$("li.active").removeClass("active");
+				$("#project-li").addClass("active");
+			}
+			else {
+				$("#index-li").addClass("active");
+				$("#project-li").removeClass("active");
+			}
 		}
 
 		function sendForm() {

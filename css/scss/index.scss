@@ -14,7 +14,7 @@
 /* INDEX SECTION */
 /* PROFILE PIC AND BIOGRAPHY */
 .pic-row {
-	margin-top: 85px;
+	margin-top: 100px;
 }
 .pro-img {
 	margin-bottom: 40px;
@@ -40,6 +40,7 @@
 .heading-text {
 	width: 100%;
 	margin: 0px;
+	margin-bottom: 10px;
 	font-family: $base-serif-bold;
 	font-size: 54px;
 
@@ -166,10 +167,11 @@
 	color: #000;
 	border-radius: 20px;
 
-	&:hover {
+	&:hover, &:focus {
 		opacity: 1;
 		background-color: $base-color;
 	}
+
 }
 
 .btn-git, .btn-live {
@@ -180,7 +182,7 @@
 	background-color: #11EDA4;
 	opacity: 0.71;
 
-	&:hover {
+	&:hover, &:focus {
 		opacity: 1;
 		background-color: #11EDA4;
 	}

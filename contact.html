@@ -50,24 +50,25 @@
 </head>
 
 <body>
+	<main>
 	<nav id="navbar">
 			<div class="nav-wrapper">
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="left hide-on-small-and-down">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="projects.html">Projects</a></li>
+					<li><a href="index.html#projects">Projects</a></li>
 					<li><a href="resume.html">Resume</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 	</nav>
 
 	<ul class="sidenav" id="mobile-demo">
-			<li><a href="index.html">Home <i class="fas fa-home"></i></a></li>
-			<li><a href="projects.html">Projects<i class="fas fa-project-diagram"></i></a></li>
-			<li><a href="resume.html">Resume <i class="fas fa-file"></i></a></li>
-			<li><a href="contact.html">Contact <i class="fas fa-envelope-open-text"></i></a></li>
-			<li class="social-li center-align"><a href="" class=""><i class="fab fa-linkedin fa-2x"></i></a><a href="" class=""><i class="fab fa-github fa-2x"></i></a></li>
+			<li id="index-li-side" ><a href="index.html">Home <i class="fas fa-home"></i></a></li>
+			<li id="project-li-side"><a href="index.html#projects">Projects<i class="fas fa-project-diagram"></i></a></li>
+			<li id="resume-li-side"><a href="resume.html">Resume <i class="fas fa-file"></i></a></li>
+			<li id="contact-li-side" class="active"><a href="contact.html">Contact <i class="fas fa-envelope-open-text"></i></a></li>
+			<li class="social-li center-align"><a href="https://www.linkedin.com/in/zafir-hasan-875376144/" class=""><i class="fab fa-linkedin fa-2x"></i></a><a href="https://github.com/zafirhsn" class=""><i class="fab fa-github fa-2x"></i></a></li>
 	</ul>
 
 	
@@ -126,8 +127,9 @@
 				</form>
 		</div>
 	</div>
+	</main>
 
-	<footer>
+	<footer class="page-footer">
 		<div class="container">
 
 			<div class="row">
@@ -135,7 +137,7 @@
 					<a href="index.html" class="footer-link">Home</a>
 				</div>
 				<div class="col s6 m3 top-row">
-					<a href="projects.html" class="footer-link">Projects</a>
+					<a href="index.html#projects" class="footer-link">Projects</a>
 				</div>
 				<div class="col s6 m3 top-row">
 					<a href="resume.html" class="footer-link">Resume</a>
@@ -146,19 +148,19 @@
 			</div>
 			
 			<div class="row center-align">
-				<div class="col s6">
+				<div class="col s2 offset-s4">
 					<a href="https://github.com/zafirhsn"><i class="fab fa-github fa-2x fa-fw logo-img"></i></a>			
 				</div>
-				<div class="col s6">
+				<div class="col s2">
 					<a href="https://www.linkedin.com/in/zafir-hasan-875376144/"><i class="fab fa-linkedin fa-2x fa-fw logo-img"></i></a>
 				</div>
 			</div>
 			
-			<div class="row bottom-row">
-				<div class="col s6">
+			<div class="row">
+				<div class="col s4 offset-s2 offset-l3">
 					<span class="footer-text">&copy; Copyright 2019. All rights reserved.</span>
 				</div>
-				<div class="col s6">
+				<div class="col s3">
 					<span class="footer-text">Contact me: zh754@nyu.edu</span>
 				</div>			
 			</div>
@@ -192,6 +194,27 @@
 				document.getElementById("navbar").style.top = "-65px";
 			}
 			prevScrollpos = currentScrollPos;
+		}
+
+		function sendForm() {
+			$.ajax({
+				method: "POST",
+				url: "http://35.245.84.46:3000/",
+				data: {
+					fname: $("input[name=fname]").val(),
+					lname: $("input[name=lname").val(),
+					email: $("input[name=email]").val(),
+					message: $("textarea[name=message]").val()
+				},
+				statusCode: {
+					200: function() {
+						$(location).attr("href", "./thankyou.html");
+					},
+					500: function() {
+						$(location).attr("href", "./thankyou.html");
+					}
+				}
+			})
 		}
 	</script>
 </body>

@@ -8,10 +8,18 @@
 
 /*Document styling*/
 html, body {
-	margin: 0;
+	margin: 0px;
+	padding: 0px;
 	min-height: 100%;
 }
-
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+main {
+	flex: 1 0 auto;
+}
 
 /* GENERAL */
 .section-row {
@@ -74,6 +82,10 @@ nav {
 	height: 65px;
 }
 
+#nav-mobile > li.active > a {
+	font-family: $base-sans;
+}
+
 #nav-mobile > li > a {
 		@media screen and (min-width: $small){
 		font-size: 28px;
@@ -92,7 +104,7 @@ nav {
 }
 
 .sidenav li.active > a {
-	background-color: $base-dark-20;
+	background-color: $base-light;
 }
 
 .sidenav li > a {
@@ -128,13 +140,7 @@ nav {
 }
 
 /*Footer styling*/
-footer {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	margin-top: 5%;
-	padding-top: 10px;
+footer.page-footer {
 	background-color: $base-dark-20;
 }
 

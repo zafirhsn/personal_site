@@ -1,1 +1,77 @@
-@font-face{font-family:"Lato-regular";src:url("../../fonts/Lato/Lato-Regular.ttf")}@font-face{font-family:"Lato-light";src:url("../../fonts/Lato/Lato-Light.ttf")}@font-face{font-family:"Lato-bold";src:url("../../fonts/Lato/Lato-Bold.ttf")}@font-face{font-family:"Lato-black";src:url("../../fonts/Lato/Lato-Black.ttf")}@font-face{font-family:"Libre_Caslon_Text Bold";src:url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf")}@font-face{font-family:"Libre_Caslon_Text Reg";src:url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf")}.resume{height:390px;height:100%;width:100%}@media screen and (min-width: 320px){.resume{height:400px}}@media screen and (min-width: 375px){.resume{height:450px}}@media screen and (min-width: 425px){.resume{height:510px}}@media screen and (min-width: 576px){.resume{height:660px}}@media screen and (min-width: 768px){.resume{height:890px}}@media screen and (min-width: 1024px){.resume{height:1100px}}/*# sourceMappingURL=resume.css.map */
+/* Scss Document */
+/* Scss Document */
+/*Color variables*/
+/* $orange-light-10: #FFC23C;
+$orange-light-20: #FFD16C;
+$orange-dark-10: #FFB000;
+$orange-dark-20: #FDAE00;
+
+$red: #FF240D;
+$red-light-10: #FF4E3C;
+$red-light-20: #FF7A6C;
+ */
+/*Font stack*/
+/* Fonts */
+@font-face {
+  font-family: "Lato-regular";
+  src: url("../../fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato-light";
+  src: url("../../fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+  font-family: "Lato-bold";
+  src: url("../../fonts/Lato/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: "Lato-black";
+  src: url("../../fonts/Lato/Lato-Black.ttf");
+}
+@font-face {
+  font-family: "Libre_Caslon_Text Bold";
+  src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf");
+}
+@font-face {
+  font-family: "Libre_Caslon_Text Reg";
+  src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf");
+}
+/* Reponsive width variables */
+/* RESUME SECTION */
+.resume {
+  height: 390px;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .resume {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .resume {
+    height: 450px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .resume {
+    height: 510px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .resume {
+    height: 660px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .resume {
+    height: 890px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .resume {
+    height: 1100px;
+  }
+}
+
+/*# sourceMappingURL=resume.css.map */

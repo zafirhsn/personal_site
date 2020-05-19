@@ -20,6 +20,29 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=e
 	
 }
 
+.info-text {
+	font-family: $base-sans-light;
+	font-size: 17px;
+
+	// @media screen and (min-width: $small) {
+	// 	font-size: 14px;
+	// } 
+	// @media screen and (min-width: $med) {
+	// 	font-size: 16px;
+	// }
+	// @media screen and (min-width: $large) {
+	// 	font-size: 18px;
+	// }
+	// @media screen and (min-width: $xlarge) {
+	// 	font-size: 20px;
+	// }
+}
+
+.form-row {
+	
+	margin-top: 10vh;
+
+}
 footer {
 	position: relative;
 	bottom: -180px;

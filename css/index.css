@@ -60,22 +60,7 @@ $red-light-20: #FF7A6C;
 }
 @media screen and (min-width: 0px) {
   .pro-img {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 600px) {
-  .pro-img {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .pro-img {
-    width: 45%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .pro-img {
-    width: 30%;
+    width: 25vh;
   }
 }
 
@@ -111,27 +96,20 @@ $red-light-20: #FF7A6C;
 
 .info-text {
   font-family: "Lato-light";
-  font-size: 18px;
-}
-@media screen and (min-width: 0px) {
-  .info-text {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .info-text {
-    font-size: 16px;
-  }
+  font-size: 17px;
 }
 @media screen and (min-width: 992px) {
   .info-text {
     font-size: 18px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .info-text {
-    font-size: 20px;
-  }
+
+.social-row {
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
+.social-row > div > a > i {
+  color: black;
 }
 
 .btn-row {
@@ -150,23 +128,9 @@ $red-light-20: #FF7A6C;
 
 .tech-text {
   font-family: "Lato-bold";
-}
-@media screen and (min-width: 0px) {
-  .tech-text {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .tech-text {
-    font-size: 16px;
-  }
+  font-size: 17px;
 }
 @media screen and (min-width: 992px) {
-  .tech-text {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1200px) {
   .tech-text {
     font-size: 18px;
   }
@@ -178,17 +142,7 @@ $red-light-20: #FF7A6C;
 }
 @media screen and (min-width: 0px) {
   .tech-img {
-    width: 25%;
-  }
-}
-@media screen and (min-width: 600px) {
-  .tech-img {
-    width: 20%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .tech-img {
-    width: 30%;
+    width: 5vh;
   }
 }
 
@@ -219,25 +173,11 @@ $red-light-20: #FF7A6C;
 
 .project-info {
   font-family: "Lato-light";
-}
-@media screen and (min-width: 0px) {
-  .project-info {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .project-info {
-    font-size: 16px;
-  }
+  font-size: 17px;
 }
 @media screen and (min-width: 992px) {
   .project-info {
     font-size: 18px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .project-info {
-    font-size: 20px;
   }
 }
 
@@ -269,7 +209,7 @@ a > .fa-github, a > .fa-link, a > .fa-file {
   margin-right: 5px;
 }
 
-.express-icon, .c-icon, .p5-icon, .mysql-icon, .nodejs-icon, .python-icon, .html-icon, .css-icon, .js-icon {
+.express-icon, .c-icon, .p5-icon, .mongo-icon, .vue-icon, .mysql-icon, .nodejs-icon, .python-icon, .html-icon, .css-icon, .js-icon {
   -webkit-transition: color 0.15s ease-out;
   -moz-transition: color 0.15s ease-out;
   -o-transition: color 0.15s ease-out;
@@ -298,7 +238,7 @@ a > .fa-github, a > .fa-link, a > .fa-file {
   color: #026e00;
 }
 
-.p5-icon, .mysql-icon, .c-icon {
+.p5-icon, .mongo-icon, .vue-icon, .mysql-icon, .c-icon {
   -webkit-transition: filter 0.15s ease-out;
   -moz-transition: filter 0.15s ease-out;
   -o-transition: filter 0.15s ease-out;
@@ -313,7 +253,7 @@ a > .fa-github, a > .fa-link, a > .fa-file {
   background-repeat: no-repeat;
   background-image: url("../../imgs/p5-logo.png");
 }
-.p5-icon:hover, .mysql-icon:hover, .c-icon:hover {
+.p5-icon:hover, .mongo-icon:hover, .vue-icon:hover, .mysql-icon:hover, .c-icon:hover {
   filter: grayscale(0%);
 }
 
@@ -339,6 +279,25 @@ a > .fa-github, a > .fa-link, a > .fa-file {
   width: 40px;
   margin-left: 7px;
   background-image: url("../../imgs/mysql.png");
+}
+
+.vue-icon {
+  position: relative;
+  top: 5px;
+  height: 30px;
+  width: 30px;
+  margin-left: 7px;
+  margin-right: 5px;
+  background-image: url("../../imgs/vue.png");
+}
+
+.mongo-icon {
+  position: relative;
+  top: 5px;
+  height: 35px;
+  width: 35px;
+  margin-left: 7px;
+  background-image: url("../../imgs/mongo.png");
 }
 
 /*# sourceMappingURL=index.css.map */

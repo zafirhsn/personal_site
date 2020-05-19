@@ -46,6 +46,15 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type
   color: #11C8ED;
 }
 
+.info-text {
+  font-family: "Lato-light";
+  font-size: 17px;
+}
+
+.form-row {
+  margin-top: 10vh;
+}
+
 footer {
   position: relative;
   bottom: -180px;

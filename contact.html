@@ -174,53 +174,11 @@
 
 
 
-	<script type="text/javascript" src="./js/aos.js"></script>
-	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="./js/materialize.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-			AOS.init();
-			$('.sidenav').sidenav();
-			$('.tooltipped').tooltip();
-			// $("#submit").click(function(event) {
-			// 	event.preventDefault();
-			// });
-		});
-
-		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function() {
-			var currentScrollPos = window.pageYOffset;
-			if (prevScrollpos > currentScrollPos) {
-				document.getElementById("navbar").style.top = "0";
-			} else {
-				document.getElementById("navbar").style.top = "-65px";
-			}
-			prevScrollpos = currentScrollPos;
-		}
-
-/* 		function sendForm() {
-			$.ajax({
-				method: "POST",
-				url: "http://35.245.84.46:3000/",
-				data: {
-					fname: $("input[name=fname]").val(),
-					lname: $("input[name=lname").val(),
-					email: $("input[name=email]").val(),
-					message: $("textarea[name=message]").val()
-				},
-				statusCode: {
-					200: function() {
-						$(location).attr("href", "./thankyou.html");
-					},
-					500: function() {
-						$(location).attr("href", "./thankyou.html");
-					}
-				}
-			})
-		}
-	 */
-	</script>
+	<script defer type="text/javascript" src="./js/aos.js"></script>
+	<script defer type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script defer type="text/javascript" src="./js/materialize.min.js"></script>
+	<script defer type="text/javascript" src="./js/index.js"></script>
+	
 </body>
 
 </html>

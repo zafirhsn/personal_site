@@ -96,31 +96,10 @@
 	</main>
 
 
-	<script type="text/javascript" src="./js/aos.js"></script>
-	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="./js/materialize.min.js"></script>
-
-	<script>
-		$(document).ready(function(){
-			AOS.init();
-			$('.sidenav').sidenav();
-			$('.tooltipped').tooltip();
-			$("#submit").click(function(event) {
-				event.preventDefault();
-			});
-		});
-
-		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function() {
-			var currentScrollPos = window.pageYOffset;
-			if (prevScrollpos > currentScrollPos) {
-				document.getElementById("navbar").style.top = "0";
-			} else {
-				document.getElementById("navbar").style.top = "-65px";
-			}
-			prevScrollpos = currentScrollPos;
-		}
-	</script>
+	<script defer type="text/javascript" src="./js/aos.js"></script>
+	<script defer type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script defer type="text/javascript" src="./js/materialize.min.js"></script>
+	<script defer type="text/javascript" src="./js/index.js"></script>
 
 
 	<footer class="page-footer">

@@ -9,26 +9,15 @@
 // $base-dark-10: #03C4E8;
 // $base-dark-20: #01849C;
 
-$base-color: #11C8ED;
-$base-light: #6BFBFF;
+$base-color: #047CD6;
+$base-light: #209dfb;
 
 
-$base-light-20: #69DBF0;
-$base-dark-10: #03C4E8;
-$base-dark-20: #01849C;
+$base-light-20: #66bdfd;
+$base-dark-10: #035796;
+$base-dark-20: #023257;
 
-
-$orange: #FFB40D;
-
-/* $orange-light-10: #FFC23C;
-$orange-light-20: #FFD16C;
-$orange-dark-10: #FFB000;
-$orange-dark-20: #FDAE00;
-
-$red: #FF240D;
-$red-light-10: #FF4E3C;
-$red-light-20: #FF7A6C;
- */
+$background: #f2f9ff;
 
 $green: #11EDA4;
 
@@ -51,11 +40,6 @@ $green: #11EDA4;
 }
 
 @font-face {
-	font-family: "Lato-black";
-	src: url("../../fonts/Lato/Lato-Black.ttf");
-}
-
-@font-face {
 	font-family: "Libre_Caslon_Text Bold";
 	src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf")
 }
@@ -71,7 +55,6 @@ $base-serif-bold: "Libre_Caslon_Text Bold";
 $base-sans: 'Lato-regular';
 $base-sans-light: 'Lato-light';
 $base-sans-bold: "Lato-bold";
-$base-sans-black: "Lato-black";
 
 /* Reponsive width variables */
 $small: 0px;

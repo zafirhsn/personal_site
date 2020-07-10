@@ -1,15 +1,6 @@
 /* Scss Document */
 /* Scss Document */
 /*Color variables*/
-/* $orange-light-10: #FFC23C;
-$orange-light-20: #FFD16C;
-$orange-dark-10: #FFB000;
-$orange-dark-20: #FDAE00;
-
-$red: #FF240D;
-$red-light-10: #FF4E3C;
-$red-light-20: #FF7A6C;
- */
 /*Font stack*/
 /* Fonts */
 @font-face {
@@ -25,10 +16,6 @@ $red-light-20: #FF7A6C;
   src: url("../../fonts/Lato/Lato-Bold.ttf");
 }
 @font-face {
-  font-family: "Lato-black";
-  src: url("../../fonts/Lato/Lato-Black.ttf");
-}
-@font-face {
   font-family: "Libre_Caslon_Text Bold";
   src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf");
 }
@@ -39,11 +26,11 @@ $red-light-20: #FF7A6C;
 /* Reponsive width variables */
 /* CONTACT SECTION */
 input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #11C8ED;
+  color: #047CD6;
 }
 
 .input-field .prefix.active {
-  color: #11C8ED;
+  color: #047CD6;
 }
 
 .info-text {

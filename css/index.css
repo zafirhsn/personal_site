@@ -1,15 +1,6 @@
 /* CSS Document */
 /* Scss Document */
 /*Color variables*/
-/* $orange-light-10: #FFC23C;
-$orange-light-20: #FFD16C;
-$orange-dark-10: #FFB000;
-$orange-dark-20: #FDAE00;
-
-$red: #FF240D;
-$red-light-10: #FF4E3C;
-$red-light-20: #FF7A6C;
- */
 /*Font stack*/
 /* Fonts */
 @font-face {
@@ -25,10 +16,6 @@ $red-light-20: #FF7A6C;
   src: url("../../fonts/Lato/Lato-Bold.ttf");
 }
 @font-face {
-  font-family: "Lato-black";
-  src: url("../../fonts/Lato/Lato-Black.ttf");
-}
-@font-face {
   font-family: "Libre_Caslon_Text Bold";
   src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf");
 }
@@ -40,23 +27,20 @@ $red-light-20: #FF7A6C;
 .index-wrapper {
   height: auto;
   width: 100%;
-  background: linear-gradient(180deg, #FEFEFE 67.19%, #CFF3FB 80.21%, rgba(17, 200, 237, 0.4) 100%);
+  background: #f2f9ff;
   background-size: cover;
 }
 
 /* INDEX SECTION */
 /* PROFILE PIC AND BIOGRAPHY */
 .pic-row {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .pro-img {
   margin-bottom: 40px;
   width: 40%;
   height: auto;
-  border-color: #000;
-  border-width: 1px;
-  border-style: solid;
 }
 @media screen and (min-width: 0px) {
   .pro-img {
@@ -185,20 +169,17 @@ $red-light-20: #FF7A6C;
 }
 
 .btn-small, .btn-git, .btn-live {
-  background-color: #11C8ED;
+  background-color: #209dfb;
   opacity: 0.71;
   color: #000;
-  border-radius: 20px;
-  margin-right: 10px;
-}
-@media screen and (max-width: 600px) {
-  .btn-small, .btn-git, .btn-live {
-    margin-bottom: 15px;
-  }
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 0px 0px;
 }
 .btn-small:hover, .btn-git:hover, .btn-live:hover, .btn-small:focus, .btn-git:focus, .btn-live:focus {
   opacity: 1;
-  background-color: #11C8ED;
+  background-color: #209dfb;
+  box-shadow: 0px 0px;
 }
 
 .btn-live {
@@ -330,10 +311,10 @@ video {
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 5px;
-  background-color: #f2fdff;
+  background-color: #f2f9ff;
   border-style: solid;
   border-width: 1px;
-  border-color: #5ad9f3;
+  border-color: #bbe2ff;
 }
 @media screen and (min-width: 0px) {
   .project-row {

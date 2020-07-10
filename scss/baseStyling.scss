@@ -49,19 +49,23 @@ main {
 	}
 }
 div > .btn, div > .btn-large {
-	background-color: rgba(255, 178, 13, 0.8);
+	border-radius: 4px;
+	background-color: $base-light;
+	// background-color: rgba(255, 178, 13, 0.8);
 	color: #000;
 	font-family: $base-sans-bold;
+	box-shadow: 0px 0px;
 
-	&:hover {
+	&:hover, &:focus {
 		opacity: 1;
-		background-color: #FFB40D;
+		background-color: $base-color;
+		box-shadow: 0px 0px;
 	}
 
-	&:focus {
-		opacity: 1;
-		background-color: #FFB40D;
-	}
+	// &:focus {
+	// 	opacity: 1;
+	// 	background-color: #FFB40D;
+	// }
 }
 
 /* NAV STYLINGS */
@@ -93,7 +97,8 @@ nav {
 
 .sidenav {
 	font-family: $base-sans;
-	background-color: #0097BA;
+	background-color: $base-dark-20;
+	// background-color: #0097BA;
 	opacity: 1;
 	width: 100%;
 }
@@ -104,14 +109,15 @@ nav {
 
 
 .sidenav li.active > a {
-	background-color: $base-color;
+	background-color: $base-dark-10;
 }
 
 .sidenav li:not(.social-li) > a  {
+	color: white;
 	height: 100%;
 	padding: 10px;
 	// background-color: $base-color;
-	font-family: $base-sans;
+	font-family: $base-sans-light;
 	font-size: 16px;
 
 }
@@ -126,11 +132,12 @@ nav {
 	padding: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
-	background-color: #0097BA;
+	// background-color: #0097BA;
 	// margin: auto;
 }
 
 .sidenav li.social-li > a > i {
+	color: white;
 	margin: 0px;
 }
 
@@ -140,8 +147,9 @@ footer.page-footer {
 	background-color: $base-dark-20;
 }
 
-.top-row {
+.col.s12.m3.top-row {
 	text-align: center;
+	padding: 10px;
 }
 
 .footer-link {

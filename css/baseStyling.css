@@ -1,15 +1,6 @@
 /* CSS Document */
 /* Scss Document */
 /*Color variables*/
-/* $orange-light-10: #FFC23C;
-$orange-light-20: #FFD16C;
-$orange-dark-10: #FFB000;
-$orange-dark-20: #FDAE00;
-
-$red: #FF240D;
-$red-light-10: #FF4E3C;
-$red-light-20: #FF7A6C;
- */
 /*Font stack*/
 /* Fonts */
 @font-face {
@@ -23,10 +14,6 @@ $red-light-20: #FF7A6C;
 @font-face {
   font-family: "Lato-bold";
   src: url("../../fonts/Lato/Lato-Bold.ttf");
-}
-@font-face {
-  font-family: "Lato-black";
-  src: url("../../fonts/Lato/Lato-Black.ttf");
 }
 @font-face {
   font-family: "Libre_Caslon_Text Bold";
@@ -92,17 +79,16 @@ main {
 }
 
 div > .btn, div > .btn-large {
-  background-color: rgba(255, 178, 13, 0.8);
+  border-radius: 4px;
+  background-color: #209dfb;
   color: #000;
   font-family: "Lato-bold";
+  box-shadow: 0px 0px;
 }
-div > .btn:hover, div > .btn-large:hover {
+div > .btn:hover, div > .btn:focus, div > .btn-large:hover, div > .btn-large:focus {
   opacity: 1;
-  background-color: #FFB40D;
-}
-div > .btn:focus, div > .btn-large:focus {
-  opacity: 1;
-  background-color: #FFB40D;
+  background-color: #047CD6;
+  box-shadow: 0px 0px;
 }
 
 /* NAV STYLINGS */
@@ -110,7 +96,7 @@ nav {
   top: 0;
   z-index: 5;
   font-family: "Lato-light";
-  background-color: #01849C;
+  background-color: #023257;
   position: fixed;
   transition: top 0.3s;
 }
@@ -138,7 +124,7 @@ nav {
 
 .sidenav {
   font-family: "Lato-regular";
-  background-color: #0097BA;
+  background-color: #023257;
   opacity: 1;
   width: 100%;
 }
@@ -148,13 +134,14 @@ nav {
 }
 
 .sidenav li.active > a {
-  background-color: #11C8ED;
+  background-color: #035796;
 }
 
 .sidenav li:not(.social-li) > a {
+  color: white;
   height: 100%;
   padding: 10px;
-  font-family: "Lato-regular";
+  font-family: "Lato-light";
   font-size: 16px;
 }
 
@@ -168,20 +155,21 @@ nav {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #0097BA;
 }
 
 .sidenav li.social-li > a > i {
+  color: white;
   margin: 0px;
 }
 
 /*Footer styling*/
 footer.page-footer {
-  background-color: #01849C;
+  background-color: #023257;
 }
 
-.top-row {
+.col.s12.m3.top-row {
   text-align: center;
+  padding: 10px;
 }
 
 .footer-link {

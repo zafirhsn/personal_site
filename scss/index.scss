@@ -6,7 +6,8 @@
 .index-wrapper {
 	height: auto;
 	width: 100%;
-	background: linear-gradient(180deg, #FEFEFE 67.19%, #CFF3FB 80.21%, rgba(17, 200, 237, 0.4) 100%);
+	background: $background;
+	// background: linear-gradient(180deg, #FEFEFE 67.19%, #CFF3FB 80.21%, rgba(17, 200, 237, 0.4) 100%);
 	background-size: cover;
 }
 
@@ -14,15 +15,15 @@
 /* INDEX SECTION */
 /* PROFILE PIC AND BIOGRAPHY */
 .pic-row {
-	margin-top: 100px;
+	padding-top: 100px;
 }
 .pro-img {
 	margin-bottom: 40px;
 	width: 40%;
 	height: auto;
-	border-color: #000;
-	border-width: 1px;
-	border-style: solid;
+	// border-color: #000;
+	// border-width: 1px;
+	// border-style: solid;
 
 	@media screen and (min-width: $small){
 		width: 25vh;
@@ -176,19 +177,18 @@
 }
 
 .btn-small {
-	background-color: $base-color;
+	background-color: $base-light;
 	opacity: 0.71;
 	color: #000;
-	border-radius: 20px;
-	margin-right: 10px;
+	border-radius: 4px;
+	margin: 5px;
+	box-shadow: 0px 0px;
 
-	@media screen and (max-width: $med) {
-		margin-bottom: 15px;
-	}
 
 	&:hover, &:focus {
 		opacity: 1;
-		background-color: $base-color;
+		background-color: $base-light;
+		box-shadow: 0px 0px;
 	}
 
 }
@@ -198,12 +198,12 @@
 }
 
 .btn-live {
-	background-color: #11EDA4;
+	background-color: $green;
 	opacity: 0.71;
 
 	&:hover, &:focus {
 		opacity: 1;
-		background-color: #11EDA4;
+		background-color: $green;
 	}
 }
 
@@ -381,10 +381,12 @@ video {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border-radius: 5px;
-	background-color: #f2fdff;
+	background-color: $background;
 	border-style:solid;
 	border-width: 1px;
-	border-color: #5ad9f3;
-	// box-shadow: 0 2px 10px 1px #7B7B7B;1
+	border-color: #bbe2ff;
+
+	// border-color: #5ad9f3;
+	// box-shadow: 0 2px 10px 1px #7B7B7B;
 }
 

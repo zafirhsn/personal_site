@@ -3,10 +3,23 @@ $(document).ready(function(){
   $('.sidenav').sidenav();
   $('.tooltipped').tooltip();
 
+  let pathname = $(location).attr("pathname");
+  if (pathname === '/index.html' || pathname === '/') {
+    $("#stock-video").html("<video autoplay loop><source src='video/stockapp.mp4' type='video/mp4'></video>");
+    $("#shooterio-video").html("<video autoplay loop><source src='video/shooterio.mp4' type='video/mp4'></video>");
+    $("#statify-video").html("<video autoplay loop><source src='video/statify.mp4' type='video/mp4'></video>");
+    $("#pricosha-video").html("<video autoplay loop><source src='video/pricosha.mp4' type='video/mp4'></video>")
+
+    // let vidArr = document.getElementsByTagName("video");
+    // for (let vid of vidArr) {
+    //   vid.play();
+    // }
+  } 
+
 });
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
@@ -15,7 +28,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 
   let path = $(location).attr("pathname")
-  if (path === "/index.html") {
+  if (path === "/index.html" || path === '/') {
     if (currentScrollPos > 1600) {
       $("li.active").removeClass("active");
       $("#project-li").addClass("active");

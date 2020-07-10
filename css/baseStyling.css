@@ -44,6 +44,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -114,25 +115,10 @@ nav {
   transition: top 0.3s;
 }
 
-.sidenav {
-  font-family: "Lato-regular";
-  background-color: #0097BA;
-}
-
-.sidenav li {
-  height: 65px;
-}
-
 #nav-mobile > li.active > a {
   font-family: "Lato-regular";
 }
 
-@media screen and (min-width: 0px) {
-  #nav-mobile > li > a {
-    font-size: 28px;
-    text-align: center;
-  }
-}
 @media screen and (min-width: 600px) {
   #nav-mobile > li > a {
     font-size: 18px;
@@ -150,29 +136,26 @@ nav {
   }
 }
 
-.sidenav li.active > a {
-  background-color: #6BFBFF;
+.sidenav {
+  font-family: "Lato-regular";
+  background-color: #0097BA;
+  opacity: 1;
+  width: 100%;
 }
 
-.sidenav li > a {
-  height: 100%;
-  padding-top: 10px;
+.sidenav li {
+  height: 65px;
+}
+
+.sidenav li.active > a {
   background-color: #11C8ED;
+}
+
+.sidenav li:not(.social-li) > a {
+  height: 100%;
+  padding: 10px;
   font-family: "Lato-regular";
   font-size: 16px;
-}
-.sidenav li > a:hover {
-  background-color: #6BFBFF;
-}
-@media screen and (min-width: 600px) {
-  .sidenav li > a {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .sidenav li > a {
-    font-size: 22px;
-  }
 }
 
 .sidenav li.social-li {
@@ -180,10 +163,15 @@ nav {
 }
 
 .sidenav li.social-li > a {
+  height: 100%;
   display: inline-block;
-  padding: 0px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #0097BA;
-  width: 25%;
+}
+
+.sidenav li.social-li > a > i {
   margin: 0px;
 }
 

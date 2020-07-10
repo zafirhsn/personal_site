@@ -11,6 +11,7 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	min-height: 100%;
+	overflow-x: hidden;
 }
 body {
 	display: flex;
@@ -73,24 +74,11 @@ nav {
 	transition: top 0.3s;
 }
 
-.sidenav {
-	font-family: $base-sans;
-	background-color: #0097BA;
-}
-
-.sidenav li {
-	height: 65px;
-}
-
 #nav-mobile > li.active > a {
 	font-family: $base-sans;
 }
 
 #nav-mobile > li > a {
-		@media screen and (min-width: $small){
-		font-size: 28px;
-		text-align: center;
-	}
 	@media screen and (min-width: $med){
 		font-size: 18px;
 		text-align: center;
@@ -103,28 +91,29 @@ nav {
 	}
 }
 
-.sidenav li.active > a {
-	background-color: $base-light;
+.sidenav {
+	font-family: $base-sans;
+	background-color: #0097BA;
+	opacity: 1;
+	width: 100%;
 }
 
-.sidenav li > a {
-	height: 100%;
-	padding-top: 10px;
+.sidenav li {
+	height: 65px;
+}
+
+
+.sidenav li.active > a {
 	background-color: $base-color;
+}
+
+.sidenav li:not(.social-li) > a  {
+	height: 100%;
+	padding: 10px;
+	// background-color: $base-color;
 	font-family: $base-sans;
 	font-size: 16px;
 
-	&:hover {
-		background-color: $base-light;
-	}
-
-	@media screen and (min-width: $med) {
-		font-size: 18px;
-	}
-
-	@media screen and (min-width: $large) {
-		font-size: 22px;
-	}
 }
 
 .sidenav li.social-li {
@@ -132,12 +121,19 @@ nav {
 }
 
 .sidenav li.social-li > a {
+	height: 100%;
 	display: inline-block;
-	padding: 0px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background-color: #0097BA;
-	width: 25%;
+	// margin: auto;
+}
+
+.sidenav li.social-li > a > i {
 	margin: 0px;
 }
+
 
 /*Footer styling*/
 footer.page-footer {

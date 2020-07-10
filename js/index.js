@@ -5,18 +5,15 @@ $(document).ready(function(){
 
   let pathname = $(location).attr("pathname");
   if (pathname === '/index.html' || pathname === '/') {
-    $("#stock-video").html("<video autoplay loop><source src='video/stockapp.mp4' type='video/mp4'></video>");
-    $("#shooterio-video").html("<video autoplay loop><source src='video/shooterio.mp4' type='video/mp4'></video>");
-    $("#statify-video").html("<video autoplay loop><source src='video/statify.mp4' type='video/mp4'></video>");
-    $("#pricosha-video").html("<video autoplay loop><source src='video/pricosha.mp4' type='video/mp4'></video>")
+    $("#stock-video").html("<video autoplay loop muted><source src='video/stockapp.mp4' type='video/mp4'></video>");
+    $("#shooterio-video").html("<video autoplay loop muted><source src='video/shooterio.mp4' type='video/mp4'></video>");
+    $("#statify-video").html("<video autoplay loop muted><source src='video/statify.mp4' type='video/mp4'></video>");
+    $("#pricosha-video").html("<video autoplay loop muted><source src='video/pricosha.mp4' type='video/mp4'></video>")
 
-    // let vidArr = document.getElementsByTagName("video");
-    // for (let vid of vidArr) {
-    //   vid.play();
-    // }
   } 
 
 });
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
@@ -44,4 +41,8 @@ window.onscroll = function() {
       $("#project-li-side").removeClass("active");
     }
   }
+}
+
+function closeOnProjects() {
+  $(".sidenav").sidenav("close");
 }

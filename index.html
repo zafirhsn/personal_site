@@ -55,14 +55,6 @@
 
 	<body>	
 		<main>
-		<!-- <ul id="project-dropdown" class="dropdown-content">
-				<li><a href="#neuralnetwork">Neural Network</a></li>
-				<li class="divider"></li>
-				<li><a href="#!">two</a></li>
-				<li class="divider"></li>
-				<li><a href="#!">three</a></li>
-		</ul> -->
-
 		<nav id="navbar">
 			<div class="nav-wrapper">
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>
@@ -75,12 +67,13 @@
 			</div>
 		</nav>
 
-		<ul class="sidenav" id="mobile-demo">
-				<li id="index-li-side" class="active"><a href="index.html">Home <i class="fas fa-home"></i></a></li>
-				<li id="project-li-side"><a href="index.html#projects">Projects<i class="fas fa-project-diagram"></i></a></li>
-				<li id="resume-li-side"><a href="resume.html">Resume <i class="fas fa-file"></i></a></li>
-				<li id="contact-li-side"><a href="contact.html">Contact <i class="fas fa-envelope-open-text"></i></a></li>
-				<li class="social-li center-align"><a href="https://www.linkedin.com/in/zafir-hasan-875376144/" class=""><i class="fab fa-linkedin fa-2x"></i></a><a href="https://github.com/zafirhsn" class=""><i class="fab fa-github fa-2x"></i></a></li>
+		<ul class="sidenav center-align" id="mobile-demo">
+				<li id="index-li-side" class="active"><a href="index.html">Home</a></li>
+				<li id="project-li-side"><a href="index.html#projects" onclick="closeOnProjects()">Projects</a></li>
+				<li id="resume-li-side"><a href="resume.html">Resume</a></li>
+				<li id="contact-li-side"><a href="contact.html">Contact</a></li>
+				<li class="social-li"><a href="https://www.linkedin.com/in/zafir-hasan-875376144/" class=""><i class="fab fa-linkedin fa-2x"></i></a><a href="https://github.com/zafirhsn" class=""><i class="fab fa-github fa-2x"></i></a></li>
+				<li class="social-li"><a href="#" data-target="mobile-demo" class="sidenav-close"><i class="small material-icons">close</i></a></li>
 		</ul>
 
 		<!-- INDEX SECTION -->

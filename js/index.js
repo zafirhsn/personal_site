@@ -8,8 +8,8 @@ $(document).ready(function(){
     $("#stock-video").html("<video autoplay loop muted><source src='video/stockapp.mp4' type='video/mp4'></video>");
     $("#shooterio-video").html("<video autoplay loop muted><source src='video/shooterio.mp4' type='video/mp4'></video>");
     $("#statify-video").html("<video autoplay loop muted><source src='video/statify.mp4' type='video/mp4'></video>");
-    $("#pricosha-video").html("<video autoplay loop muted><source src='video/pricosha.mp4' type='video/mp4'></video>")
-
+    $("#pricosha-video").html("<video autoplay loop muted><source src='video/pricosha.mp4' type='video/mp4'></video>");
+    $("#filtos-video").html("<video autoplay loop muted><source src='video/filtos.mp4' type='video/mp4'></video>")
   } 
 
 });

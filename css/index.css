@@ -57,24 +57,17 @@
 }
 @media screen and (min-width: 0px) {
   .heading-text {
-    font-size: 36px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 600px) {
-  .heading-text {
-    font-size: 46px;
-    text-align: center;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 992px) {
   .heading-text {
-    font-size: 50px;
+    font-size: 46px;
   }
 }
 @media screen and (min-width: 1200px) {
   .heading-text {
-    font-size: 58px;
+    font-size: 50px;
   }
 }
 
@@ -84,7 +77,7 @@
 }
 @media screen and (min-width: 992px) {
   .info-text {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
@@ -112,11 +105,11 @@
 
 .tech-text {
   font-family: "Mulish-bold";
-  font-size: 17px;
+  font-size: 18px;
 }
 @media screen and (min-width: 992px) {
   .tech-text {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 
@@ -137,12 +130,7 @@
 }
 @media screen and (min-width: 0px) {
   .project-heading {
-    font-size: 28px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .project-heading {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -164,7 +152,7 @@
 }
 @media screen and (min-width: 992px) {
   .project-info {
-    font-size: 18px;
+    font-size: 19px;
   }
 }
 

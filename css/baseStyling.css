@@ -57,14 +57,7 @@ main {
 }
 @media screen and (min-width: 0px) {
   .section-title {
-    font-size: 28px;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 600px) {
-  .section-title {
-    font-size: 36px;
-    text-align: center;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -174,11 +167,12 @@ footer.page-footer {
 
 .footer-link {
   font-family: "Mulish-reg";
+  font-size: 16px;
   color: #FFF;
 }
 
 .footer-text {
-  font-size: 12px;
+  font-size: 13px;
   color: #FFF;
   font-family: "Mulish-reg";
 }

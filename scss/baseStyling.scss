@@ -33,18 +33,16 @@ main {
 	font-size: 54px;
 	// text-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
 
-	@media screen and (min-width: $small){
-		font-size: 28px;
-		text-align: center;
-	}
-	@media screen and (min-width: $med){
-		font-size: 36px;
-		text-align: center;
-	}
-	@media screen and (min-width: $large){
+	@media screen and (min-width: $small) {
+		font-size: 40px;
+	} 
+	// @media screen and (min-width: $med) {
+	// 	font-size: 36px;
+	// }
+	@media screen and (min-width: $large) {
 		font-size: 46px;
 	}
-	@media screen and (min-width: $xlarge){
+	@media screen and (min-width: $xlarge) {
 		font-size: 50px;
 	}
 }
@@ -154,11 +152,12 @@ footer.page-footer {
 
 .footer-link {
 	font-family: $base-sans;
+	font-size: 16px;
 	color: #FFF;
 }
 
 .footer-text {
-	font-size: 12px;
+	font-size: 13px;
 	color: #FFF;
 	font-family: $base-sans;
 }

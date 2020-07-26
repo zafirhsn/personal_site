@@ -4,24 +4,24 @@
 /*Font stack*/
 /* Fonts */
 @font-face {
-  font-family: "Lato-regular";
-  src: url("../../fonts/Lato/Lato-Regular.ttf");
+  font-family: "Mulish-light";
+  src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf");
+  font-weight: 300;
 }
 @font-face {
-  font-family: "Lato-light";
-  src: url("../../fonts/Lato/Lato-Light.ttf");
+  font-family: "Mulish-reg";
+  src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf");
+  font-weight: 500;
 }
 @font-face {
-  font-family: "Lato-bold";
-  src: url("../../fonts/Lato/Lato-Bold.ttf");
+  font-family: "Mulish-bold";
+  src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf");
+  font-weight: 700;
 }
 @font-face {
-  font-family: "Libre_Caslon_Text Bold";
-  src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf");
-}
-@font-face {
-  font-family: "Libre_Caslon_Text Reg";
-  src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf");
+  font-family: "Work Sans-bold";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+  font-weight: 650;
 }
 /* Reponsive width variables */
 .index-wrapper {
@@ -52,7 +52,7 @@
   width: 100%;
   margin: 0px;
   margin-bottom: 10px;
-  font-family: "Libre_Caslon_Text Bold";
+  font-family: "Work Sans-bold";
   font-size: 54px;
 }
 @media screen and (min-width: 0px) {
@@ -79,7 +79,7 @@
 }
 
 .info-text {
-  font-family: "Lato-light";
+  font-family: "Mulish-light";
   font-size: 17px;
 }
 @media screen and (min-width: 992px) {
@@ -111,7 +111,7 @@
 }
 
 .tech-text {
-  font-family: "Lato-bold";
+  font-family: "Mulish-bold";
   font-size: 17px;
 }
 @media screen and (min-width: 992px) {
@@ -133,7 +133,7 @@
 
 /* PROJECTS SECTION */
 .project-heading {
-  font-family: "Lato-regular";
+  font-family: "Mulish-reg";
 }
 @media screen and (min-width: 0px) {
   .project-heading {
@@ -157,7 +157,7 @@
 }
 
 .project-info {
-  font-family: "Lato-light";
+  font-family: "Mulish-light";
   font-size: 17px;
   display: inline-block;
   margin-bottom: 20px;
@@ -170,6 +170,7 @@
 
 .btn-small, .btn-git, .btn-live {
   background-color: #209dfb;
+  font-family: "Mulish-bold";
   opacity: 0.71;
   color: #000;
   border-radius: 4px;

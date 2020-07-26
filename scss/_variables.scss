@@ -25,36 +25,35 @@ $green: #11EDA4;
 /*Font stack*/
 /* Fonts */
 @font-face {
-	font-family: "Lato-regular";
-	src: url("../../fonts/Lato/Lato-Regular.ttf")
+	font-family: "Mulish-light";
+	src: url('../fonts/Mulish/Mulish-VariableFont_wght.ttf');
+	font-weight: 300;
 }
 
 @font-face {
-	font-family: "Lato-light";
-	src: url("../../fonts/Lato/Lato-Light.ttf");
+	font-family: "Mulish-reg";
+	src: url('../fonts/Mulish/Mulish-VariableFont_wght.ttf');
+	font-weight: 500;
 }
 
 @font-face {
-	font-family: "Lato-bold";
-	src: url("../../fonts/Lato/Lato-Bold.ttf");
+	font-family: "Mulish-bold";
+	src: url('../fonts/Mulish/Mulish-VariableFont_wght.ttf');
+	font-weight: 700;
 }
 
 @font-face {
-	font-family: "Libre_Caslon_Text Bold";
-	src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf")
+	font-family: "Work Sans-bold";
+	src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+	font-weight: 650;
 }
 
-@font-face {
-	font-family: "Libre_Caslon_Text Reg";
-	src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf");
-}
 
-$base-serif: "Libre_Caslon_Text Reg";
-$base-serif-bold: "Libre_Caslon_Text Bold";
+$base-serif-bold: "Work Sans-bold";
 
-$base-sans: 'Lato-regular';
-$base-sans-light: 'Lato-light';
-$base-sans-bold: "Lato-bold";
+$base-sans: 'Mulish-reg';
+$base-sans-light: 'Mulish-light';
+$base-sans-bold: "Mulish-bold";
 
 /* Reponsive width variables */
 $small: 0px;

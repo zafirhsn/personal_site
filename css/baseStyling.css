@@ -4,24 +4,24 @@
 /*Font stack*/
 /* Fonts */
 @font-face {
-  font-family: "Lato-regular";
-  src: url("../../fonts/Lato/Lato-Regular.ttf");
+  font-family: "Mulish-light";
+  src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf");
+  font-weight: 300;
 }
 @font-face {
-  font-family: "Lato-light";
-  src: url("../../fonts/Lato/Lato-Light.ttf");
+  font-family: "Mulish-reg";
+  src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf");
+  font-weight: 500;
 }
 @font-face {
-  font-family: "Lato-bold";
-  src: url("../../fonts/Lato/Lato-Bold.ttf");
+  font-family: "Mulish-bold";
+  src: url("../fonts/Mulish/Mulish-VariableFont_wght.ttf");
+  font-weight: 700;
 }
 @font-face {
-  font-family: "Libre_Caslon_Text Bold";
-  src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Bold.ttf");
-}
-@font-face {
-  font-family: "Libre_Caslon_Text Reg";
-  src: url("../../fonts/Libre_Caslon_Text/LibreCaslonText-Regular.ttf");
+  font-family: "Work Sans-bold";
+  src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+  font-weight: 650;
 }
 /* Reponsive width variables */
 /*Animation mixins*/
@@ -52,7 +52,7 @@ main {
 .section-title {
   width: 100%;
   margin: 0px;
-  font-family: "Libre_Caslon_Text Bold";
+  font-family: "Work Sans-bold";
   font-size: 54px;
 }
 @media screen and (min-width: 0px) {
@@ -82,7 +82,7 @@ div > .btn, div > .btn-large {
   border-radius: 4px;
   background-color: #209dfb;
   color: #000;
-  font-family: "Lato-bold";
+  font-family: "Mulish-bold";
   box-shadow: 0px 0px;
 }
 div > .btn:hover, div > .btn:focus, div > .btn-large:hover, div > .btn-large:focus {
@@ -95,14 +95,14 @@ div > .btn:hover, div > .btn:focus, div > .btn-large:hover, div > .btn-large:foc
 nav {
   top: 0;
   z-index: 5;
-  font-family: "Lato-light";
+  font-family: "Mulish-light";
   background-color: #023257;
   position: fixed;
   transition: top 0.3s;
 }
 
 #nav-mobile > li.active > a {
-  font-family: "Lato-regular";
+  font-family: "Mulish-reg";
 }
 
 @media screen and (min-width: 600px) {
@@ -123,7 +123,7 @@ nav {
 }
 
 .sidenav {
-  font-family: "Lato-regular";
+  font-family: "Mulish-reg";
   background-color: #023257;
   opacity: 1;
   width: 100%;
@@ -141,7 +141,7 @@ nav {
   color: white;
   height: 100%;
   padding: 10px;
-  font-family: "Lato-light";
+  font-family: "Mulish-light";
   font-size: 16px;
 }
 
@@ -173,14 +173,14 @@ footer.page-footer {
 }
 
 .footer-link {
-  font-family: "Lato-regular";
+  font-family: "Mulish-reg";
   color: #FFF;
 }
 
 .footer-text {
   font-size: 12px;
   color: #FFF;
-  font-family: "Lato-regular";
+  font-family: "Mulish-reg";
 }
 
 .logo-img {

@@ -37,7 +37,7 @@ input,
 select,
 textarea,
 button {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 p {
   color: var(--gray);
@@ -155,6 +155,11 @@ main .contents h1 {
   font-weight: 700;
   text-transform: capitalize;
 }
+
+main .contents .cta.aos-init {
+  padding-bottom: 4rem;
+}
+
 .title span {
   color: var(--primary);
   position: relative;
@@ -324,7 +329,7 @@ section .title p {
   justify-content: center;
 }
 .skills .card {
-  max-width: 25rem;
+  max-width: 20rem;
   aspect-ratio: 1/1;
   display: flex;
   flex-direction: column;
@@ -548,7 +553,7 @@ section .title p {
     right: unset;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 3rem;
+    bottom: 0rem;
     z-index: 2;
   }
   .footer-list {

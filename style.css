@@ -180,8 +180,8 @@ main .contents .cta.aos-init {
 .hero-img {
   position: absolute;
   width: 50%;
-  right: 0px;
-  height: 100%;
+  right: -5%;
+  height: 70%;
 }
 .hero-img img {
   height: 100%;

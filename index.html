@@ -1,482 +1,421 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129309453-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
 
-			gtag('config', 'UA-129309453-1');
-		</script>
-		<link rel="preload" href="video/stockapp.mp4" as="video" type="video/mp4">
-
-		<link rel="preload" as="style" href="css/index.css">
-		<!--Web App Manifest-->
-		<link rel="manifest" href="/manifest.webmanifest">
-
-		<!-- Materialize CSS -->
-		<link type="text/css" rel="stylesheet" href="./css/materialize.min.css">
-
-		<!--Import Google Icon Font-->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		
-		<!-- Stylesheet for font Awesome -->
-		<link href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" rel="stylesheet">
-
-		<!-- Scroll animation library -->
-		<link href="./css/aos.css" rel="stylesheet">
-		
-		<!--Page style sheet-->
-		<link href="css/baseStyling.css" rel="stylesheet" type="text/css">
-		<link href="css/index.css" rel="stylesheet" type="text/css">
-		
-		<!-- Favicon  -->
-		<link rel="icon" type="image/png" href="imgs/favicon-32x32.png">
-
-		<title>Zafir Hasan | Developer</title>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="Keywords" content="resume,Zafir Hasan,Zafir,Developer,Designer,Front-End Developer,UI,Back-end Developer,Dev,Web,Apps,NYU,New York,portfolio,software,engineer">
-		<meta name="author" content="=Zafir Hasan">
-		<meta name="description" content="Online portfolio for New York based developer Zafir Hasan">
-		<!-- Allows googles web crawler (Googlebot) to find and index my site, this is the default value, but I want to be able to see it-->
-		<meta name="robots" content="index">
-		<meta name="theme-color" content="#023257"/>
-
-		<style>
-
-			
-		</style>   
-	</head>
-
-
-	<body>	
-		<main>
-		<nav id="navbar">
-			<div class="nav-wrapper">
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>
-				<ul id="nav-mobile" class="left hide-on-small-and-down">
-					<li id="index-li" class="active"><a href="index.html">Home</a></li>
-					<li id="project-li"><a href="#projects">Projects</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-
-		<ul class="sidenav center-align" id="mobile-demo">
-				<li id="index-li-side" class="active"><a href="index.html">Home</a></li>
-				<li id="project-li-side"><a href="index.html#projects" onclick="closeOnProjects()">Projects</a></li>
-				<li id="resume-li-side"><a href="resume.html">Resume</a></li>
-				<li id="contact-li-side"><a href="contact.html">Contact</a></li>
-				<li class="social-li"><a href="https://www.linkedin.com/in/zafir-hasan-875376144/" class=""><i class="fab fa-linkedin fa-2x"></i></a><a href="https://github.com/zafirhsn" class=""><i class="fab fa-github fa-2x"></i></a></li>
-				<li class="social-li"><a href="#" data-target="mobile-demo" class="sidenav-close"><i class="small material-icons">close</i></a></li>
-		</ul>
-
-		<!-- INDEX SECTION -->
-		<div class="index-wrapper">
-			<div class="container">
-				<!-- Page Content goes here -->
-				<div class="row pic-row">
-					<div class="col s12 center-align">
-							<img class="circle pro-img" src="/imgs/zafir.jpg">
-					</div>
-
-					<div class="col s12 center-align">
-						<p class="heading-text">Hi, I'm Zafir</p>
-						<span class="info-text">
-							I'm a software engineer based in New York City. I received my B.S. in Computer Science from NYU in 2019 and have since focused on full stack web developer roles where I've been able to use JavaScript, Node.js, PHP, and Vue, among other technologies. After graduating, I worked as a full stack web developer for IndoorBuddy, a very early stage startup focused on bringing indoor wayfinding to grocery stores and other complex indoor venues. After IndoorBuddy, I joined Thankview as a software engineer working on both our front-end in AngularJS and Vue, and our back-end in Laravel/PHP. I have over 2 years of industry experience and am currently looking for my next role! In my free time, I've enjoyed working on projects that have allowed me to learn about topics in front-end and back-end development, databases, and machine learning. Some of those projects are listed here. You can find out more about my work from my Github and LinkedIn below. </span>
-					</div>
-			
-				</div>
-
-				<div class="row center-align social-row">
-					<div class="col s2 offset-s4" align="end">
-						<a href="https://github.com/zafirhsn"><i class="fab fa-github fa-3x fa-fw"></i></a>			
-					</div>
-					<div class="col s2" align="start">
-						<a href="https://www.linkedin.com/in/zafir-hasan-875376144/"><i class="fab fa-linkedin fa-3x fa-fw"></i></a>
-					</div>
-				</div>
-
-				<div class="row btn-row center-align">
-					<div class="col s12">
-							<a class="waves-effect btn-large" href="Zafir_Hasan_Resume.pdf" download>Download Resume</a>
-					</div>
-				</div>
-
-				<div class="row tech-row center-align">
-						<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700" data-aos-offset="200" data-aos-once="true">
-								<img class="tech-img" src="./imgs/js.png">
-								<p class="tech-text">JavaScript</p>
-						</div>
-						<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700" data-aos-offset="200" data-aos-once="true">
-								<img class="tech-img " src="./imgs/css.png">
-								<p class="tech-text">CSS</p>
-						</div>
-						<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700" data-aos-offset="200" data-aos-once="true">
-								<img class="tech-img" src="./imgs/vue.png">
-								<p class="tech-text">Vue.js</p>
-						</div>
-						<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700" data-aos-offset="200" data-aos-once="true"> 
-								<img class="tech-img" src="./imgs/mongo.png">
-								<p class="tech-text">MongoDB</p>
-						</div>
-						<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700" data-aos-offset="200" data-aos-once="true">
-								<img class="tech-img" src="./imgs/html.png">
-								<p class="tech-text">HTML5</p>
-						</div>
-						<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700" data-aos-offset="200" data-aos-once="true">
-								<img class="tech-img" src="./imgs/node.png">
-								<p class="tech-text">Node.js</p>
-						</div>
-						<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700" data-aos-offset="200" data-aos-once="true">
-								<img class="tech-img" src="./imgs/c++.png">
-								<p class="tech-text">C++</p>
-						</div>
-						<div class="col s6 l3 tech-col" data-aos="fade-down" data-aos-duration="700" data-aos-offset="200" data-aos-once="true">
-								<img class="tech-img" src="./imgs/sass.png">
-								<p class="tech-text">SASS</p>
-						</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- PROJECTS SECTION -->
-		<div class="container" id="projects">
-			<div class="row section-row">
-				<div class="col s12">
-					<p class="section-title center-align">Projects</p>
-				</div>
-			</div>
-
-
-			<div class="row project-row" data-aos="fade-left" data-aos-duration="700" data-aos-offset="200" data-aos-once="true"> 
-				<div class="col s12">
-
-					<div class="row">
-
-						<div class="col s12 center-align">
-							<h1 id="filtos" class="project-heading"><a href="index.html#filtos">Filtos</a></h1>
-						</div>
-
-						<div class="col s12 center-align" id="filtos-video">
-						</div>
-
-						<div class="col s12 center-align">
-							<span class="project-info">Filtos is an app that allows for advanced filtering of songs from users' Spotify libraries. Users can filter songs by genre, tempo, energy, danceability, and more and then select songs to save to a playlist. Made using Vue.js, Node.js, Express, HTML, CSS/SCSS, and Spotify's web API.</span>
-						</div>
-					</div>
-					
-					<div class="row center-align">
-						<div class="col s12 center-align">
-							<a class="btn-small btn-git" href="https://github.com/zafirhsn/filtos-frontend" target="_blank"><i class="fab fa-github"></i>Github</a>
-							<a class="btn-small btn-live" href="https://filtos.app" target="_blank"><i class="fas fa-link"></i>Live Link</a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-						<span class="vue-icon tooltipped" data-position="top" data-tooltip="Vue.js"></span>
-						<i class="fab fa-html5 fa-2x fa-fw html-icon tooltipped" data-position="top" data-tooltip="HTML"></i>
-						<i class="fab fa-css3-alt fa-2x fa-fw css-icon tooltipped" data-position="top" data-tooltip="CSS"></i>
-						<i class="fab fa-node-js fa-2x fa-fw nodejs-icon tooltipped"  data-position="top" data-tooltip="Node.js"></i>
-						<span class="express-icon tooltipped" data-position="top" data-tooltip="Express"></span>
-
-						</div>
-					</div>
-					
-				</div>
-			</div>
-
-
-			<div class="row project-row" data-aos="fade-right" data-aos-duration="700" data-aos-offset="200" data-aos-once="true"> 
-				<div class="col s12">
-
-					<div class="row">
-
-						<div class="col s12 center-align">
-							<h1 id="stockapp" class="project-heading"><a href="index.html#stockapp">Stock Portfolio</a></h1>
-						</div>
-
-						<div class="col s12 center-align" id="stock-video">
-						</div>
-
-						<div class="col s12 center-align">
-							<span class="project-info">Stock Portfolio is an app that allows users to register an account with an email, log in, and buy mock stocks given $5000 cash. The app uses IEX Cloud API for current stock prices and to measure portfolio performance. Built using Vue.js, HTML, CSS, Node.js, Express, and MongoDB.</span>
-						</div>
-					</div>
-					
-					<div class="row center-align">
-						<div class="col s12 center-align">
-							<a class="btn-small btn-git" href="https://github.com/zafirhsn/stock-portfolio-app" target="_blank"><i class="fab fa-github"></i>Github</a>
-							<a class="btn-small btn-live" href="https://stock-portfolio-app.netlify.app/" target="_blank"><i class="fas fa-link"></i>Live Link</a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-						<span class="vue-icon tooltipped" data-position="top" data-tooltip="Vue.js"></span>
-						<i class="fab fa-html5 fa-2x fa-fw html-icon tooltipped" data-position="top" data-tooltip="HTML"></i>
-						<i class="fab fa-css3-alt fa-2x fa-fw css-icon tooltipped" data-position="top" data-tooltip="CSS"></i>
-						<i class="fab fa-node-js fa-2x fa-fw nodejs-icon tooltipped"  data-position="top" data-tooltip="Node.js"></i>
-						<span class="express-icon tooltipped" data-position="top" data-tooltip="Express"></span>
-						<span class="mongo-icon tooltipped" data-position="top" data-tooltip="MongoDB"></span>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-
-
-			<div id="neuralnetwork " class="row project-row" data-aos="fade-left" data-aos-duration="700" data-aos-offset="300" data-aos-once="true"> 
-				<div class="col s12">
-
-					<div class="row">
-
-						<div class="col s12 center-align">
-							<h1 id="neuralnetwork" class="project-heading"><a href="index.html#neuralnetwork">Neural Network</a></h1>
-						</div>
-
-						<div class="col s12 center-align">
-							<span class="project-info">A 2 layer Fully-connected perceptron for recognizing handwritten digits from 0 to 4. The network is trained using back-propagation with stochastic gradient descent. The goal was not only to train the network to recognize handwritten digits, but to experiment with various hyper parameters of the network to determine which combination of parameters produced the most accurate network. The results of that experimentation are represented in the tables below. This neural network was created using C++.</span>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-							<a class="btn-small btn-git" href="https://github.com/zafirhsn/artificial_intelligence/tree/master/neural-network" target="_blank"><i class="fab fa-github"></i>Github</a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-						<span class="c-icon tooltipped" data-position="top" data-tooltip="C++"></span>	
-						</div>
-					</div>
-					
-				</div>
-			</div>
-
-
-
-			<div class="row project-row"data-aos="fade-right" data-aos-duration="700" data-aos-offset="300" data-aos-once="true"> 
-				<div class="col s12">
-
-					<div class="row">
-						<div class="col s12 center-align">
-							<h1 id="shooterio" class="project-heading"><a href="index.html#shooterio">Shooter.io</a></h1>
-						</div>
-
-						<div class="col s12 center-align" id="shooterio-video">
-						</div>
-
-						<div class="col s12 center-align">
-							<span class="project-info">Shooter.io is a real-time, online multiplayer game that allows users to control a circle and obtain points by defeating other users. Each player controls a circle using the left, right, up, down arrow keys or by using the W, A, S, D keys. A player can use thier mouse to point at another player on the screen and left click in order to fire a laser at the opposing player. Once a player dies, they are removed from the server and given the option to restart and play again. The game continues for the players who are still alive. Shooter.io was made using Node.js, Express, p5.js, and Socket.io.  </span>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-							<a class="btn-small btn-git" href="https://github.com/zafirhsn/shooterapp" target="_blank"><i class="fab fa-github"></i>Github</a>
-							<a class="btn-small btn-live" href="https://shooterio.onrender.com" target="_blank"><i class="fas fa-link"></i>Live Link</a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-						<i class="fab fa-html5 fa-2x fa-fw html-icon tooltipped" data-position="top" data-tooltip="HTML"></i>
-						<i class="fab fa-css3-alt fa-2x fa-fw css-icon tooltipped" data-position="top" data-tooltip="CSS"></i>
-						<i class="fab fa-js-square fa-2x fa-fw js-icon tooltipped" data-position="top" data-tooltip="JavaScript"></i>
-						<i class="fab fa-node-js fa-2x fa-fw nodejs-icon tooltipped"  data-position="top" data-tooltip="Node.js"></i>
-						<span class="express-icon tooltipped" data-position="top" data-tooltip="Express"></span>
-						<span class="p5-icon tooltipped" data-position="top" data-tooltip="p5.js"></span>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-
-
-			<div class="row project-row" data-aos="fade-left" data-aos-duration="700" data-aos-offset="300" data-aos-once="true"> 
-				<div class="col s12">
-					<div class="row">
-
-						<div class="col s12 center-align">
-							<h1 id="statify" class="project-heading"><a href="index.html#statify">Statify</a></h1>
-						</div>
-						
-						<div class="col s12 center-align" id="statify-video">
-						</div>
-
-						<div class="col s12 center-align">
-						<span class="project-info">Statify is a site that allows Spotify users to see their listening habits over time, share their data through a link, and compare with friends. Listeners can view their top artists, songs, and genres of all time, of the last 6 months, and of the last 4 weeks. A link sharing feature allows users to share their profile with friends and compare their friends habits with theirs. This app was made using Vue.js on the front-end with the Veutify component library and Node.js and Express on the backend along with MongoDB for data storage. It is currently live and can be found at the link below.</span>
-						</div>
-
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-								<a class="btn-small btn-git"href="https://github.com/zafirhsn/statify" target="_blank"><i class="fab fa-github"></i>Github</a>
-								<a class="btn-small btn-live" href="https://statifyfrontend.netlify.com/" target="_blank"><i class="fas fa-link"></i>Live Link</a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-							<span class="vue-icon tooltipped" data-position="top" data-tooltip="Vue.js"></span>
-							<i class="fab fa-node-js fa-2x fa-fw nodejs-icon tooltipped"  data-position="top" data-tooltip="Node.js"></i>
-							<span class="express-icon tooltipped" data-position="top" data-tooltip="Express"></span>
-							<span class="mongo-icon tooltipped" data-position="top" data-tooltip="MongoDB"></span>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-
-
-			<div class="row project-row" data-aos="fade-right" data-aos-duration="700" data-aos-offset="300" data-aos-once="true">	
-				<div class="col s12">
-
-
-					<div class="row">
-						<div class="col s12 center-align">
-							<h1 id="pricosha" class="project-heading"><a href="index.html#pricosha">PriCoSha</a></h1>
-						</div>
-
-						<div class="col s12 center-align" id="pricosha-video">
-						</div>	
-
-						<div class="col s12 center-align">
-							<span class="project-info">PriCoSha is a rudimentary social media site where users can create an account, comment, like, tag, post, add/delete friends, and direct message people, among other features. The main goal of this project was to display a deep understanding of SQL and database design. The site communincates with a database in MySQL in order to store and display information to the user. Tables were created for content, comments, friendgroups, members, people, sharing, and content tags. Flask for Python was used to query the database with the aim to reduce queries as much as possible to ensure the site remained fast. PriCoSha was made in HTML, CSS, Python and MySQL.</span> 
-						</div>
-					</div>
-
-					
-					<div class="row">
-						<div class="col s12 center-align">			
-								<a class="btn-small btn-git" href="https://github.com/zafirhsn/PriCoSha" target="_blank"><i class="fab fa-github"></i>Github</a>
-						</div>	
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-							<i class="fab fa-html5 fa-2x fa-fw html-icon tooltipped" data-position="top" data-tooltip="HTML"></i>
-							<i class="fab fa-css3-alt fa-2x fa-fw css-icon tooltipped" data-position="top" data-tooltip="CSS"></i>
-							<i class="fab fa-python fa-2x fa-fw python-icon tooltipped" data-position="top" data-tooltip="Python"></i>
-							<span class="mysql-icon tooltipped" data-position="top" data-tooltip="MySQL"></span>	
-						</div>
-					</div>
-					
-					
-				</div>
-			</div>
-
-
-			<div class="row project-row" data-aos="fade-left" data-aos-duration="700" data-aos-offset="300" data-aos-once="true">
-				<div class="col s12">
-					<div class="row">
-
-						<div class="col s12 center-align">
-							<h1 id="qgame" class="project-heading"><a href="index.html#qgame">Q</a></h1>
-						</div>
-						<div class="col s12 center-align">
-						<span class="project-info">Q is a 2D platform game where the objective is to make it across the map. The players controls their block using the left and right arrow keys and the spacebar to jump. Enemies will chase after the player and shoot lasers trying to stop them. Sounds like a simple platformer, but the twist in Q is that time stops when the player stops. Time only moves forward when the player is moving. Use that to your advantage as you make your way through 3 levels of increasing difficulty. The main goal of Q was to use OpenGL to create a platformer that consisted of at least 3 levels, enemy A.I., sound effects and music, animations, and a title screen and game mode. Q was made in C++.</span>
-						</div>
-					</div>
-				
-					<div class="row">
-						<div class="col s12 center-align">			
-							<a class="btn-small btn-git" href="https://github.com/zafirhsn/CS3113FinalProject" target="_blank"><i class="fab fa-github"></i>Github</a>
-						</div>	
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">
-							<span class="c-icon tooltipped" data-position="top" data-tooltip="C++"></span>	
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-
-			<div class="row project-row" data-aos="fade-right" data-aos-duration="700" data-aos-offset="300" data-aos-once="true">
-				<div class="col s12">
-
-					<div class="row">
-						<div class="col s12 center-align">
-							<h1 id="network" class="project-heading"><a href="index.html#network">Network Design for GDA</a></h1>
-						</div>
-
-						<div class="col s12 center-align">
-							<span class="project-info">This project outlines a complete network infrastructure for a hypothetical architecture company called Global Design Alternatives (GDA). It includes an IP addressing schema for all offices, LAN designs for every office, the identification of every applicable protocol used in each layer of the network, the locations for the main data centers, calculations of throughout, acceptable delays, and bandwidth, and an outline for security measures. 
-
-							The main goal of this project is to display a deep understanding of computer networks from the physical layer to the application layer. All information about GDA was relevant in making crucial decisions about the network infrastructure. Routing voIP traffic over an MPLS network instead of VPN through public internet, using VLANs to connect departments in an office, calculating bandwidth requirements for each department, and choosing MPLS in order to engineer traffic on the network were some of the decisions made when designing the network. The full document outline can be found here
-							</span>
-						</div>
-					</div>
-					
-					<div class="row">
-						<div class="col s12 center-align">			
-							<a class="btn-small btn-git" href="https://docs.google.com/document/d/1S8fIoMiKnXW7qzehlCGRF71CgfuPwsYa-rskFIaWCOs/edit?usp=sharing" target="_blank"><i class="fas fa-file"></i>Document</a>
-						</div>		
-					</div>
-					
-					
-				</div>
-			</div>
-		</div>
-	</main>
-
-		<!-- FOOTER -->
-		<footer class="page-footer">
-			<div class="container">
-	
-				<div class="row">
-					<div class = "col s12 m3 top-row"> 
-						<a href="index.html" class="footer-link">Home</a>
-					</div>
-					<div class="col s12 m3 top-row">
-						<a href="index.html#projects" class="footer-link">Projects</a>
-					</div>
-					<div class="col s12 m3 top-row">
-						<a href="resume.html" class="footer-link">Resume</a>
-					</div>
-					<div class="col s12 m3 top-row">
-						<a href="contact.html" class="footer-link">Contact</a>
-					</div>
-				</div>
-				
-				<div class="row center-align">
-					<div class="col s6 right-align">
-						<a href="https://github.com/zafirhsn"><i class="fab fa-github fa-2x fa-fw logo-img"></i></a>			
-					</div>
-					<div class="col s6 left-align">
-						<a href="https://www.linkedin.com/in/zafir-hasan-875376144/"><i class="fab fa-linkedin fa-2x fa-fw logo-img"></i></a>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col s6 right-align">
-						<span class="footer-text">&copy; Copyright 2023. All rights reserved.</span>
-					</div>
-					<div class="col s6 left-align">
-						<span class="footer-text">Contact me: zh754@nyu.edu</span>
-					</div>			
-				</div>
-				
-			</div>	
-		</footer>
-	
-	<script defer type="text/javascript" src="./js/aos.js"></script>
-	<script defer type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
-	<script defer type="text/javascript" src="./js/materialize.min.js"></script>
-	<script defer type="text/javascript" src="./js/index.js"></script>
-
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+  <title>Zafir Hasan | Software Engineer</title>
+</head>
+
+<body>
+  <img src="images/glow.png" alt="" class="glow" />
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="#" alt="" />
+      </div>
+      <div class="links">
+        <a href="#home" onclick="menu()" class="active">Home</a>
+        <a href="#experience" onclick="menu()">Experience</a>
+        <a href="#skills" onclick="menu()">Skills</a>
+        <a href="#portfolio" onclick="menu()">Portfolio</a>
+        <a href="#contact" onclick="menu()">
+          <button>Contact Me</button>
+        </a>
+      </div>
+      <i class="uil uil-align-center-alt menu" onclick="menu()"></i>
+    </div>
+  </header>
+  <main class="section" id="home">
+    <div class="container">
+      <div class="contents">
+        <h1 class="title" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top">
+          Hi, I'm
+          <span>Zafir
+            <svg width="269" height="18" viewBox="0 0 269 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 16C137.086 -0.112742 278.493 -4.43292 266.259 15.9997" stroke-width="3"
+                stroke-linecap="round" />
+            </svg>
+          </span>
+        </h1>
+        <p data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1100"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top">
+          I'm a Software Engineer based in New York City with 5+ years of industry experience primarily in startups. I received my B.S. in Computer Science from NYU in 2019 and
+          have since
+          focused on full stack development roles where I've been able to use JavaScript, Node.js, PHP, Python, Go, Vue, and React among
+          other
+          technologies. I currently work at Fyusion where I focus on backend development and maintenance of our core APIs. These APIs support the AI/ML work of damage detection in vehicles across the company. I am currently looking for my first few clients as a freelance Software Engineer. If you have any web application development needs, please reach out to me using the form as the bottom and I will get back to you!
+        </p>
+
+        <div class="cta cta-socials" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1200"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top">
+          <a href="https://github.com/zafirhsn">
+            <i class="uil uil-github cta-socials"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/zafir-hasan-875376144/">
+            <i class="uil uil-linkedin cta-socials"></i>
+          </a>
+        </div>
+        <div class="cta" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1200"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top">
+
+          <a href="#contact"><button>Contact Me</button></a>
+          <a href="Zafir Hasan_Resume_NY_2024.pdf" download><button class="empty">Download Resume</button></a>
+        </div>
+      </div>
+      <div class="hero-img" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1300"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top">
+        <!-- <img src="images/hero.png" alt="" /> -->
+      </div>
+    </div>
+  </main>
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="title center">
+        <h2>Experience</h2>
+      </div>
+      <div class="roadmap">
+        <div class="item" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top">
+          <div class="pin">
+            <p>2023</p>
+          </div>
+          <div class="details">
+            <h3>Fyusion</h3>
+            <h4>Senior Software Engineer</h4>
+            <p>As a Software Engineer at Fyusion, I work primarily on backend development of new features and maintenance of our core API used by all other teams and clients. I collaborate with multiple teams, expand documentation, and tackle technical debt to improve application performance and knowledge of our systems company wide. I have pioneered projects to improve observalibility of our legacy application, leading to reduced times to bug resolution. I've also led projects to refactor and improve our CI/CD process for our legacy application, leading to more reliable code design and a streamlined build process.</p>
+
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1200"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top">
+          <div class="pin">
+            <p>2020</p>
+          </div>
+          <div class="details">
+            <h3>Thankview</h3>
+            <h4>Software Engineer 1</h4>
+            <p> As a Software Engineer at Thankview, I led backend development for the Advanced Metrics Filters feature, allowing hundreds of clients the ability to create and export complex queries on user data. This project led me to greatly expanding unit tests on the backend, leading to delivery of more stable code releases. I also contributed to frontend and backend implementation of Free Trial pages, 2FA, and in-browser webcam recording which supported part of the core functionality of the platform.
+            <br>
+            <br>
+            About Thankview: Thankview aims to be the one-stop shop for donor relation management. Users of Thankview are able to create and deliver email campaigns to donors at the right time, increasing engagement, donor retention, and donations received. Clients mostly included non-profits and higher education.
+            </p>
+          </div>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1400"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top">
+          <div class="pin">
+            <p>2019</p>
+          </div>
+          <div class="details">
+            <h3>IndoorBuddy</h3>
+            <h4>Full Stack Developer</h4>
+            <p>As a Full Stack Developer at IndoorBuddy, I worked on backend implementation of our core APIs to be consumed by the client iOS app and web app. I also contributed to frontend development of our Store Manager Analytics Dashboard, allowing grocery store managers to view metrics on how shoppers navigated their store. Since IndoorBuddy was an early stage startup, I contributed to pitches and user interviews as well as development of our tech. I conducted dozens of user interviews with shoppers to outline software requirements and pitched IndoorBuddy's value proposition to investors and advisors. After a pitch at the AWS Loft, IndoorBudy won "Most Promising Startup" at AWS "Winning Pitch Deck" event. 
+            <br>
+            <br>
+            About IndoorBuddy: IndoorBuddy aimed to bring navigation to complex indoor spaces like event halls, grocery stores, and shopping centers. Starting with grocery stores, IndoorBuddy partnered with managers to allow shoppers to navigate to items through an iOS app using augmented reality. Grocery store managers received analytics on how shoppers navigated their store and what items they shopped for.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="title center">
+        <h2>My skills</h2>
+      </div>
+      <div class="skills">
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+            data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/php-1-logo-png-transparent.png" alt="PHP Logo">
+          </div>
+          <p>PHP</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/js.png" alt="">
+          </div>
+          <p>Java Script</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/reactjs.png" alt="">
+          </div>
+          <p>React</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/vue.png" alt="">
+          </div>
+          <p>Vue.js</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/mongo.png" alt="">
+          </div>
+          <p>MongoDB</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/mysql.png" alt="">
+          </div>
+          <p>MySQL</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/docker.webp" alt="">
+          </div>
+          <p>Docker</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/node.png" alt="">
+          </div>
+          <p>Node.js</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/python.webp" alt="">
+          </div>
+          <p>Python</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.1">
+          <div class="ico">
+            <img src="images/sass.png" alt="">
+          </div>
+          <p>Sass</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="title center">
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class="portfolio-wrap">
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top">
+          <div class="frame">
+            <video src="video/filtos.mp4" autoplay muted loop></video>
+          </div>
+          <div class="contents">
+            <h3>Filtos</h3>
+            <p>Filtos is an app that allows for advanced filtering of songs from users' Spotify libraries. Users can
+              filter songs by
+              genre, tempo, energy, danceability, and more and then select songs to save to a playlist. Made using
+              Vue.js, Node.js,
+              Express, HTML, CSS/SCSS, and Spotify's web API.</p>
+            <div class="stack">
+              <div class="tag">vue js</div>
+              <div class="tag">HTML5</div>
+              <div class="tag">CSS3</div>
+              <div class="tag">Node js</div>
+              <div class="tag">Express js</div>
+            </div>
+            <div class="cta">
+              <a href="https://github.com/zafirhsn/filtos-backend"><button><i class="uil uil-github"></i> Github</button></a>
+              <a href="https://filtos.app/"><button class="empty"><i class="uil uil-external-link-alt"></i> Live preview</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top">
+          <div class="frame">
+            <video src="video/stockapp.mp4" autoplay muted loop></video>
+          </div>
+          <div class="contents">
+            <h3>Stock Portfolio</h3>
+            <p>Stock Portfolio is an app that allows users to register an account with an email, log in, and buy mock stocks given $5000 cash. The app uses IEX Cloud API for current stock prices and to measure portfolio performance. Built using Vue.js, HTML, CSS, Node.js, Express, and MongoDB.</p>
+            <div class="stack">
+              <div class="tag">vue js</div>
+              <div class="tag">MongoDB</div>
+              <div class="tag">CSS3</div>
+              <div class="tag">Node js</div>
+              <div class="tag">Express js</div>
+            </div>
+            <div class="cta">
+              <a href="https://github.com/zafirhsn/stock-portfolio-app"><button><i class="uil uil-github"></i> Github</button></a>
+              <a href="https://stock-portfolio-app.netlify.app/"><button class="empty"><i class="uil uil-external-link-alt"></i> Live preview</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top">
+          <div class="frame">
+            <video src="video/shooterio.mp4" autoplay muted loop></video>
+          </div>
+          <div class="contents">
+            <h3>Shooter.io</h3>
+            <p>Shooter.io is a real-time, online multiplayer game that allows users to control a circle and obtain points by defeating other users. Each player controls a circle using the left, right, up, down arrow keys or by using the W, A, S, D keys. A player can use thier mouse to point at another player on the screen and left click in order to fire a laser at the opposing player. Once a player dies, they are removed from the server and given the option to restart and play again. The game continues for the players who are still alive. Shooter.io was made using Node.js, Express, p5.js, and Socket.io.</p>
+            <div class="stack">
+              <div class="tag">vue js</div>
+              <div class="tag">p5.js</div>
+              <div class="tag">CSS3</div>
+              <div class="tag">Node js</div>
+              <div class="tag">Express js</div>
+            </div>
+            <div class="cta">
+              <a href="https://github.com/zafirhsn/shooterapp"><button><i class="uil uil-github"></i> Github</button></a>
+              <a href="https://shooterio.onrender.com/"><button class="empty"><i class="uil uil-external-link-alt"></i> Live preview</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+          data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top">
+          <div class="frame">
+            <video src="video/statify.mp4" autoplay muted loop></video>
+          </div>
+          <div class="contents">
+            <h3>Statify</h3>
+            <p>Statify is a site that allows Spotify users to see their listening habits over time, share their data through a link, and compare with friends. Listeners can view their top artists, songs, and genres of all time, of the last 6 months, and of the last 4 weeks. A link sharing feature allows users to share their profile with friends and compare their friends habits with theirs. This app was made using Vue.js on the front-end with the Veutify component library and Node.js and Express on the backend along with MongoDB for data storage. It is currently live and can be found at the link below.
+            </p>
+            <div class="stack">
+              <div class="tag">vue js</div>
+              <div class="tag">MongoDB</div>
+              <div class="tag">Node js</div>
+              <div class="tag">Express js</div>
+            </div>
+            <div class="cta">
+              <a href="https://github.com/zafirhsn/statify"><button><i class="uil uil-github"></i> Github</button></a>
+              <a href="https://statifyfrontend.netlify.com/"><button class="empty"><i class="uil uil-external-link-alt"></i> Live preview</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top">
+          <div class="frame">
+            <img src="images/project.jpg" alt="">
+          </div>
+          <div class="contents">
+            <h3>Neural Network</h3>
+            <p>A 2 layer Fully-connected perceptron for recognizing handwritten digits from 0 to 4. The network is trained using back-propagation with stochastic gradient descent. The goal was not only to train the network to recognize handwritten digits, but to experiment with various hyper parameters of the network to determine which combination of parameters produced the most accurate network. The results of that experimentation are represented in the tables below. This neural network was created using C++.</p>
+            <div class="stack">
+              <div class="tag">C++</div>
+            </div>
+            <div class="cta">
+              <a href="https://github.com/zafirhsn/artificial_intelligence/tree/master/neural-network"><button><i class="uil uil-github"></i> Github</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top">
+          <div class="frame">
+            <img src="images/project.jpg" alt="">
+          </div>
+          <div class="contents">
+            <h3>Q</h3>
+            <p>Q is a 2D platform game where the objective is to make it across the map. The players controls their block using the left and right arrow keys and the spacebar to jump. Enemies will chase after the player and shoot lasers trying to stop them. Sounds like a simple platformer, but the twist in Q is that time stops when the player stops. Time only moves forward when the player is moving. Use that to your advantage as you make your way through 3 levels of increasing difficulty. The main goal of Q was to use OpenGL to create a platformer that consisted of at least 3 levels, enemy A.I., sound effects and music, animations, and a title screen and game mode. Q was made in C++.</p>
+            <div class="stack">
+              <div class="tag">C++</div>
+            </div>
+            <div class="cta">
+              <a href="https://github.com/zafirhsn/CS3113FinalProject"><button><i class="uil uil-github"></i> Github</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="contact">
+    <div class="container">
+        <div class="title center">
+          <h2>Contact</h2>
+          <p>I am currently looking for my first few clients as a freelance Software Engineer. If you have any web application development needs, please reach out to me using the form below and I will get back to you! My services include building Full Stack Web Applications, Frontend UI implementation, Web API development, Web Scraper development, AI API integrations, bug fixes and general coding help, and more. As I begin my journey as a freelancer, I plan on giving major discounts to my first few clients who trust me with their projects. As an experienced engineer from New York, I aim to complete your project 100% to your liking and satisfaction and would be happy to bring your ideas to life!</p>
+        </div>
+        <form name="contact" method="POST" class="contact-form" data-netlify="true">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="organization">Organization</label>
+            <input type="text" id="organization" name="organization">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        </div>
+    </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-menu grid">
+        <div class="about">
+          <p>Follow me</p>
+          <div class="social">
+            <a href="https://github.com/zafirhsn">
+              <i class="uil uil-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/zafir-hasan-875376144/">
+              <i class="uil uil-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+          <a href="#">Home</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2024 website</p>
+        <p>
+          All Rights Reserved | <a href="#">Terms and Conditions</a> |
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="app.js"></script>
+  <script type="text/javascript" src="js/tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".skills .card"), {
+      max: 15,
+      speed: 300,
+    });
+  </script>
+</body>
 
 </html>

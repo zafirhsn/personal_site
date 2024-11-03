@@ -144,6 +144,9 @@ main .overlay {
   align-items: center;
   gap: 1.5rem;
 }
+.cta-socials {
+  font-size: 5rem;
+}
 main .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -490,12 +493,13 @@ section .title p {
     max-width: 60rem;
   }
   header .links {
+    z-index: -5;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    height: calc(100vh - 8rem);
+    height: 100%;
     position: fixed;
-    top: 8rem;
+    top: 0rem;
     background: rgba(0, 0, 0, 0.72);
     backdrop-filter: blur(15px);
     width: 100%;
@@ -572,6 +576,10 @@ section .title p {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
+  }
+  .cta-socials {
+    display: flex;
+    justify-content: center;
   }
   .cta button {
     width: 100%;
